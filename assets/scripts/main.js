@@ -35,11 +35,31 @@ cars__tab__2.addEventListener("click", () => {
 const cars_models_types = ['.first_cars__models', '.second_cars__models']
 for (let cars_models of cars_models_types) {
     new Swiper(cars_models, {
-        // Optional parameters
         direction: 'horizontal',
-        loop: true,
+        spaceBetween: 20,
 
-        // Navigation arrows
+        breakpoints: {
+            1400: {
+                slidesPerView: 5,
+            },
+
+            1100: {
+                slidesPerView: 4,
+            },
+
+            800: {
+                slidesPerView: 3,
+            },
+
+            600: {
+                slidesPerView: 2,
+            },
+
+            0: {
+                slidesPerView: 1,
+            },
+        },
+
         navigation: {
             nextEl: '.cars__arrows--next',
             prevEl: '.cars__arrows--prev',
