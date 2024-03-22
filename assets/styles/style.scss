@@ -1,3 +1,26 @@
+/* Sass Расширения */
+%link_hover_effect {
+    position: relative;
+    width: fit-content;
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 0%;
+        transition: width .3s linear;
+        background-color: var(--dark-blue);
+        bottom: 0;
+    }
+
+    &:hover {
+        &::after {
+            width: 100%;
+        }
+    }
+}
+
 header {
     display: flex;
     flex-direction: column;
@@ -127,24 +150,9 @@ header {
                     font-weight: 700;
                     font-size: 1.25rem;
                     cursor: pointer;
-                    position: relative;
                     color: var(--black);
 
-                    &::after {
-                        content: "";
-                        display: block;
-                        position: absolute;
-                        height: 2px;
-                        width: 0%;
-                        transition: width .3s linear;
-                        background-color: var(--dark-blue);
-                    }
-
-                    &:hover {
-                        &::after {
-                            width: 100%;
-                        }
-                    }
+                    @extend %link_hover_effect;
                 }
             }
         }
@@ -273,5 +281,158 @@ header {
             position: relative;
             bottom: 0;
         }
+    }
+}
+
+/* Cars */
+.cars {
+    display: flex;
+    flex-direction: column;
+    color: var(--black);
+    margin-top: 10%;
+    height: 100%;
+
+    &--caption {
+        text-align: center;
+        font-weight: 700;
+        font-size: 40px;
+        margin-bottom: 3%;
+    }
+
+    &__tabs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5%;
+
+        .active {
+            background-color: var(--dark-blue);
+            color: #fff;
+        }
+    }
+
+    &__tab {
+        transition: .2s linear all;
+        border-radius: 10px;
+        background-color: #fafafa;
+        height: 70px;
+        width: 20%;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    &__h3_arrows {
+        display: flex;
+        margin-top: 3%;
+        align-items: center;
+        justify-content: center;
+
+        &--caption {
+            font-weight: 700;
+            font-size: 32px;
+            text-align: center;
+            left: 5%;
+            position: relative;
+        }
+    }
+
+    &__arrows {
+        display: flex;
+        position: relative;
+        left: 25%;
+        gap: 25%;
+        width: 120px;
+
+        svg {
+            cursor: pointer;
+        }
+    }
+
+    /* Cars models */
+    &__models {
+        grid-template-columns: repeat(6, 1fr);
+        margin-top: 5%;
+        margin-left: 15%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        height: 240px;
+        display: none;
+    }
+
+    .active_cars {
+        display: grid;
+    }
+
+    &__model {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        position: relative;
+
+        &--info {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 0 5%;
+            height: 100%;
+        }
+
+        &--image {
+            width: 100%;
+            height: 100%;
+            position: relative;
+
+            &_logo {
+                position: absolute;
+                right: 15%;
+            }
+        }
+
+        &--title {
+            font-weight: 700;
+            font-size: 24px;
+            text-align: left;
+            white-space: nowrap;
+        }
+
+        &--price {
+            font-weight: 400;
+            font-size: 20px;
+            color: var(--dark-grey);
+            text-align: left;
+        }
+
+        &--more {
+            display: flex;
+            align-items: center;
+            gap: 3%;
+            font-weight: 400;
+            font-size: 20px;
+            color: var(--dark-blue);
+
+            @extend %link_hover_effect;
+
+            &_wrapper {
+                display: flex;
+                align-items: center;
+                gap: 5%;
+            }
+        }
+    }
+
+    .swiper-slide {
+        display: flex;
+        gap: 0%;
+    }
+
+    &__to_catalog {
+        border-radius: 10px;
+        background: var(--dark-blue);
+        color: var(--white);
+        height: 50px;
+        width: 20%;
+        margin-top: 3%;
+        align-self: center;
     }
 }

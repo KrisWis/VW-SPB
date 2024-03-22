@@ -7,6 +7,10 @@
   <meta name="description" content='Главная страница для веб сайта "VW-SPB"'>
   <meta name="keywords" content="html, css, js">
   <meta name="author" content="KrisWis, botya060606">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="assets/styles/style.css">
   <title>Главная</title>
@@ -137,7 +141,394 @@
       </div>
     </div>
   </section>
+
+  <section class="cars">
+    <h2 class="cars--caption">Автомобили в наличии</h2>
+
+    <div class="cars__tabs">
+      <button class="cars__tab active" id="cars__tab__1">Новые авто</button>
+      <button class="cars__tab" id="cars__tab__2">Авто с пробегом</button>
+    </div>
+
+    <div class="cars__h3_arrows">
+      <h3 class="cars__h3_arrows--caption">Легковые автомобили</h3>
+
+      <div class="cars__arrows">
+        <svg class="cars__arrows--prev" width="44" height="24" viewBox="0 0 44 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M42 13.5C42.8284 13.5 43.5 12.8284 43.5 12C43.5 11.1716 42.8284 10.5 42 10.5V13.5ZM0.939342 10.9393C0.353554 11.5251 0.353554 12.4749 0.939342 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.939342 10.9393ZM42 10.5L2 10.5V13.5L42 13.5V10.5Z" fill="#0032A0" />
+        </svg>
+        <svg class="cars__arrows--next" width="44" height="24" viewBox="0 0 44 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 10.5C1.17157 10.5 0.5 11.1716 0.5 12C0.5 12.8284 1.17157 13.5 2 13.5V10.5ZM43.0607 13.0607C43.6464 12.4749 43.6464 11.5251 43.0607 10.9393L33.5147 1.3934C32.9289 0.807611 31.9792 0.807611 31.3934 1.3934C30.8076 1.97919 30.8076 2.92893 31.3934 3.51472L39.8787 12L31.3934 20.4853C30.8076 21.0711 30.8076 22.0208 31.3934 22.6066C31.9792 23.1924 32.9289 23.1924 33.5147 22.6066L43.0607 13.0607ZM2 13.5H42V10.5H2V13.5Z" fill="#0032A0" />
+        </svg>
+      </div>
+
+    </div>
+
+    <div class="first_cars__models cars__models active_cars" id="first_cars__models">
+
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+    
+          <div class="cars__model">
+            <div class="cars__model--image">
+              <img class="cars__model--image_model" src="assets/images/cars__model_image.png" alt="Изображение машины">
+              <img class="cars__model--image_logo" src="assets/images/cars__model_logo_image.png" alt="Изображение логотипа">
+            </div>
+    
+            <div class="cars__model--info">
+              <h3 class="cars__model--title">Volkswagen TERAMONT</h3>
+              <p class="cars__model--price">от 7 010 000 ₽</p>
       
+              <div class="cars__model--more_wrapper">
+    
+                <a class="cars__model--more" href="#">Подробнее</a>
+                <svg width="26" height="15" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 6.5835C0.447715 6.5835 0 7.03121 0 7.5835C0 8.13578 0.447715 8.5835 1 8.5835V6.5835ZM25.7071 8.2906C26.0976 7.90008 26.0976 7.26691 25.7071 6.87639L19.3431 0.512428C18.9526 0.121904 18.3195 0.121904 17.9289 0.512428C17.5384 0.902953 17.5384 1.53612 17.9289 1.92664L23.5858 7.5835L17.9289 13.2404C17.5384 13.6309 17.5384 14.264 17.9289 14.6546C18.3195 15.0451 18.9526 15.0451 19.3431 14.6546L25.7071 8.2906ZM1 8.5835H25V6.5835H1V8.5835Z" fill="#0032A0" />
+                </svg>
+    
+              </div>
+            </div>
+          </div>
+    
+          <div class="cars__model">
+            <div class="cars__model--image">
+              <img class="cars__model--image_model" src="assets/images/cars__model_image.png" alt="Изображение машины">
+              <img class="cars__model--image_logo" src="assets/images/cars__model_logo_image.png" alt="Изображение логотипа">
+            </div>
+    
+            <div class="cars__model--info">
+              <h3 class="cars__model--title">Volkswagen TERAMONT</h3>
+              <p class="cars__model--price">от 7 010 000 ₽</p>
+      
+              <div class="cars__model--more_wrapper">
+    
+                <a class="cars__model--more" href="#">Подробнее</a>
+                <svg width="26" height="15" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 6.5835C0.447715 6.5835 0 7.03121 0 7.5835C0 8.13578 0.447715 8.5835 1 8.5835V6.5835ZM25.7071 8.2906C26.0976 7.90008 26.0976 7.26691 25.7071 6.87639L19.3431 0.512428C18.9526 0.121904 18.3195 0.121904 17.9289 0.512428C17.5384 0.902953 17.5384 1.53612 17.9289 1.92664L23.5858 7.5835L17.9289 13.2404C17.5384 13.6309 17.5384 14.264 17.9289 14.6546C18.3195 15.0451 18.9526 15.0451 19.3431 14.6546L25.7071 8.2906ZM1 8.5835H25V6.5835H1V8.5835Z" fill="#0032A0" />
+                </svg>
+    
+              </div>
+            </div>
+          </div>
+    
+          <div class="cars__model">
+            <div class="cars__model--image">
+              <img class="cars__model--image_model" src="assets/images/cars__model_image.png" alt="Изображение машины">
+              <img class="cars__model--image_logo" src="assets/images/cars__model_logo_image.png" alt="Изображение логотипа">
+            </div>
+    
+            <div class="cars__model--info">
+              <h3 class="cars__model--title">Volkswagen TERAMONT</h3>
+              <p class="cars__model--price">от 7 010 000 ₽</p>
+      
+              <div class="cars__model--more_wrapper">
+    
+                <a class="cars__model--more" href="#">Подробнее</a>
+                <svg width="26" height="15" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 6.5835C0.447715 6.5835 0 7.03121 0 7.5835C0 8.13578 0.447715 8.5835 1 8.5835V6.5835ZM25.7071 8.2906C26.0976 7.90008 26.0976 7.26691 25.7071 6.87639L19.3431 0.512428C18.9526 0.121904 18.3195 0.121904 17.9289 0.512428C17.5384 0.902953 17.5384 1.53612 17.9289 1.92664L23.5858 7.5835L17.9289 13.2404C17.5384 13.6309 17.5384 14.264 17.9289 14.6546C18.3195 15.0451 18.9526 15.0451 19.3431 14.6546L25.7071 8.2906ZM1 8.5835H25V6.5835H1V8.5835Z" fill="#0032A0" />
+                </svg>
+    
+              </div>
+            </div>
+          </div>
+    
+          <div class="cars__model">
+            <div class="cars__model--image">
+              <img class="cars__model--image_model" src="assets/images/cars__model_image.png" alt="Изображение машины">
+              <img class="cars__model--image_logo" src="assets/images/cars__model_logo_image.png" alt="Изображение логотипа">
+            </div>
+    
+            <div class="cars__model--info">
+              <h3 class="cars__model--title">Volkswagen TERAMONT</h3>
+              <p class="cars__model--price">от 7 010 000 ₽</p>
+      
+              <div class="cars__model--more_wrapper">
+    
+                <a class="cars__model--more" href="#">Подробнее</a>
+                <svg width="26" height="15" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 6.5835C0.447715 6.5835 0 7.03121 0 7.5835C0 8.13578 0.447715 8.5835 1 8.5835V6.5835ZM25.7071 8.2906C26.0976 7.90008 26.0976 7.26691 25.7071 6.87639L19.3431 0.512428C18.9526 0.121904 18.3195 0.121904 17.9289 0.512428C17.5384 0.902953 17.5384 1.53612 17.9289 1.92664L23.5858 7.5835L17.9289 13.2404C17.5384 13.6309 17.5384 14.264 17.9289 14.6546C18.3195 15.0451 18.9526 15.0451 19.3431 14.6546L25.7071 8.2906ZM1 8.5835H25V6.5835H1V8.5835Z" fill="#0032A0" />
+                </svg>
+    
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="swiper-slide">
+    
+          <div class="cars__model">
+            <div class="cars__model--image">
+              <img class="cars__model--image_model" src="assets/images/cars__model_image.png" alt="Изображение машины">
+              <img class="cars__model--image_logo" src="assets/images/cars__model_logo_image.png" alt="Изображение логотипа">
+            </div>
+    
+            <div class="cars__model--info">
+              <h3 class="cars__model--title">Volkswagen TERAMONT</h3>
+              <p class="cars__model--price">от 7 010 000 ₽</p>
+      
+              <div class="cars__model--more_wrapper">
+    
+                <a class="cars__model--more" href="#">Подробнее</a>
+                <svg width="26" height="15" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 6.5835C0.447715 6.5835 0 7.03121 0 7.5835C0 8.13578 0.447715 8.5835 1 8.5835V6.5835ZM25.7071 8.2906C26.0976 7.90008 26.0976 7.26691 25.7071 6.87639L19.3431 0.512428C18.9526 0.121904 18.3195 0.121904 17.9289 0.512428C17.5384 0.902953 17.5384 1.53612 17.9289 1.92664L23.5858 7.5835L17.9289 13.2404C17.5384 13.6309 17.5384 14.264 17.9289 14.6546C18.3195 15.0451 18.9526 15.0451 19.3431 14.6546L25.7071 8.2906ZM1 8.5835H25V6.5835H1V8.5835Z" fill="#0032A0" />
+                </svg>
+    
+              </div>
+            </div>
+          </div>
+    
+          <div class="cars__model">
+            <div class="cars__model--image">
+              <img class="cars__model--image_model" src="assets/images/cars__model_image.png" alt="Изображение машины">
+              <img class="cars__model--image_logo" src="assets/images/cars__model_logo_image.png" alt="Изображение логотипа">
+            </div>
+    
+            <div class="cars__model--info">
+              <h3 class="cars__model--title">Volkswagen TERAMONT</h3>
+              <p class="cars__model--price">от 7 010 000 ₽</p>
+      
+              <div class="cars__model--more_wrapper">
+    
+                <a class="cars__model--more" href="#">Подробнее</a>
+                <svg width="26" height="15" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 6.5835C0.447715 6.5835 0 7.03121 0 7.5835C0 8.13578 0.447715 8.5835 1 8.5835V6.5835ZM25.7071 8.2906C26.0976 7.90008 26.0976 7.26691 25.7071 6.87639L19.3431 0.512428C18.9526 0.121904 18.3195 0.121904 17.9289 0.512428C17.5384 0.902953 17.5384 1.53612 17.9289 1.92664L23.5858 7.5835L17.9289 13.2404C17.5384 13.6309 17.5384 14.264 17.9289 14.6546C18.3195 15.0451 18.9526 15.0451 19.3431 14.6546L25.7071 8.2906ZM1 8.5835H25V6.5835H1V8.5835Z" fill="#0032A0" />
+                </svg>
+    
+              </div>
+            </div>
+          </div>
+    
+          <div class="cars__model">
+            <div class="cars__model--image">
+              <img class="cars__model--image_model" src="assets/images/cars__model_image.png" alt="Изображение машины">
+              <img class="cars__model--image_logo" src="assets/images/cars__model_logo_image.png" alt="Изображение логотипа">
+            </div>
+    
+            <div class="cars__model--info">
+              <h3 class="cars__model--title">Volkswagen TERAMONT</h3>
+              <p class="cars__model--price">от 7 010 000 ₽</p>
+      
+              <div class="cars__model--more_wrapper">
+    
+                <a class="cars__model--more" href="#">Подробнее</a>
+                <svg width="26" height="15" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 6.5835C0.447715 6.5835 0 7.03121 0 7.5835C0 8.13578 0.447715 8.5835 1 8.5835V6.5835ZM25.7071 8.2906C26.0976 7.90008 26.0976 7.26691 25.7071 6.87639L19.3431 0.512428C18.9526 0.121904 18.3195 0.121904 17.9289 0.512428C17.5384 0.902953 17.5384 1.53612 17.9289 1.92664L23.5858 7.5835L17.9289 13.2404C17.5384 13.6309 17.5384 14.264 17.9289 14.6546C18.3195 15.0451 18.9526 15.0451 19.3431 14.6546L25.7071 8.2906ZM1 8.5835H25V6.5835H1V8.5835Z" fill="#0032A0" />
+                </svg>
+    
+              </div>
+            </div>
+          </div>
+    
+          <div class="cars__model">
+            <div class="cars__model--image">
+              <img class="cars__model--image_model" src="assets/images/cars__model_image.png" alt="Изображение машины">
+              <img class="cars__model--image_logo" src="assets/images/cars__model_logo_image.png" alt="Изображение логотипа">
+            </div>
+    
+            <div class="cars__model--info">
+              <h3 class="cars__model--title">Volkswagen TERAMONT</h3>
+              <p class="cars__model--price">от 7 010 000 ₽</p>
+      
+              <div class="cars__model--more_wrapper">
+    
+                <a class="cars__model--more" href="#">Подробнее</a>
+                <svg width="26" height="15" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 6.5835C0.447715 6.5835 0 7.03121 0 7.5835C0 8.13578 0.447715 8.5835 1 8.5835V6.5835ZM25.7071 8.2906C26.0976 7.90008 26.0976 7.26691 25.7071 6.87639L19.3431 0.512428C18.9526 0.121904 18.3195 0.121904 17.9289 0.512428C17.5384 0.902953 17.5384 1.53612 17.9289 1.92664L23.5858 7.5835L17.9289 13.2404C17.5384 13.6309 17.5384 14.264 17.9289 14.6546C18.3195 15.0451 18.9526 15.0451 19.3431 14.6546L25.7071 8.2906ZM1 8.5835H25V6.5835H1V8.5835Z" fill="#0032A0" />
+                </svg>
+    
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="second_cars__models cars__models" id="second_cars__models">
+
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+    
+          <div class="cars__model">
+            <div class="cars__model--image">
+              <img class="cars__model--image_model" src="assets/images/cars__model_image.png" alt="Изображение машины">
+              <img class="cars__model--image_logo" src="assets/images/cars__model_logo_image.png" alt="Изображение логотипа">
+            </div>
+    
+            <div class="cars__model--info">
+              <h3 class="cars__model--title">Volkswagen TERAMONT</h3>
+              <p class="cars__model--price">от 7 010 000 ₽</p>
+      
+              <div class="cars__model--more_wrapper">
+    
+                <a class="cars__model--more" href="#">Подробнее</a>
+                <svg width="26" height="15" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 6.5835C0.447715 6.5835 0 7.03121 0 7.5835C0 8.13578 0.447715 8.5835 1 8.5835V6.5835ZM25.7071 8.2906C26.0976 7.90008 26.0976 7.26691 25.7071 6.87639L19.3431 0.512428C18.9526 0.121904 18.3195 0.121904 17.9289 0.512428C17.5384 0.902953 17.5384 1.53612 17.9289 1.92664L23.5858 7.5835L17.9289 13.2404C17.5384 13.6309 17.5384 14.264 17.9289 14.6546C18.3195 15.0451 18.9526 15.0451 19.3431 14.6546L25.7071 8.2906ZM1 8.5835H25V6.5835H1V8.5835Z" fill="#0032A0" />
+                </svg>
+    
+              </div>
+            </div>
+          </div>
+    
+          <div class="cars__model">
+            <div class="cars__model--image">
+              <img class="cars__model--image_model" src="assets/images/cars__model_image.png" alt="Изображение машины">
+              <img class="cars__model--image_logo" src="assets/images/cars__model_logo_image.png" alt="Изображение логотипа">
+            </div>
+    
+            <div class="cars__model--info">
+              <h3 class="cars__model--title">Volkswagen TERAMONT</h3>
+              <p class="cars__model--price">от 7 010 000 ₽</p>
+      
+              <div class="cars__model--more_wrapper">
+    
+                <a class="cars__model--more" href="#">Подробнее</a>
+                <svg width="26" height="15" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 6.5835C0.447715 6.5835 0 7.03121 0 7.5835C0 8.13578 0.447715 8.5835 1 8.5835V6.5835ZM25.7071 8.2906C26.0976 7.90008 26.0976 7.26691 25.7071 6.87639L19.3431 0.512428C18.9526 0.121904 18.3195 0.121904 17.9289 0.512428C17.5384 0.902953 17.5384 1.53612 17.9289 1.92664L23.5858 7.5835L17.9289 13.2404C17.5384 13.6309 17.5384 14.264 17.9289 14.6546C18.3195 15.0451 18.9526 15.0451 19.3431 14.6546L25.7071 8.2906ZM1 8.5835H25V6.5835H1V8.5835Z" fill="#0032A0" />
+                </svg>
+    
+              </div>
+            </div>
+          </div>
+    
+          <div class="cars__model">
+            <div class="cars__model--image">
+              <img class="cars__model--image_model" src="assets/images/cars__model_image.png" alt="Изображение машины">
+              <img class="cars__model--image_logo" src="assets/images/cars__model_logo_image.png" alt="Изображение логотипа">
+            </div>
+    
+            <div class="cars__model--info">
+              <h3 class="cars__model--title">Volkswagen TERAMONT</h3>
+              <p class="cars__model--price">от 7 010 000 ₽</p>
+      
+              <div class="cars__model--more_wrapper">
+    
+                <a class="cars__model--more" href="#">Подробнее</a>
+                <svg width="26" height="15" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 6.5835C0.447715 6.5835 0 7.03121 0 7.5835C0 8.13578 0.447715 8.5835 1 8.5835V6.5835ZM25.7071 8.2906C26.0976 7.90008 26.0976 7.26691 25.7071 6.87639L19.3431 0.512428C18.9526 0.121904 18.3195 0.121904 17.9289 0.512428C17.5384 0.902953 17.5384 1.53612 17.9289 1.92664L23.5858 7.5835L17.9289 13.2404C17.5384 13.6309 17.5384 14.264 17.9289 14.6546C18.3195 15.0451 18.9526 15.0451 19.3431 14.6546L25.7071 8.2906ZM1 8.5835H25V6.5835H1V8.5835Z" fill="#0032A0" />
+                </svg>
+    
+              </div>
+            </div>
+          </div>
+    
+          <div class="cars__model">
+            <div class="cars__model--image">
+              <img class="cars__model--image_model" src="assets/images/cars__model_image.png" alt="Изображение машины">
+              <img class="cars__model--image_logo" src="assets/images/cars__model_logo_image.png" alt="Изображение логотипа">
+            </div>
+    
+            <div class="cars__model--info">
+              <h3 class="cars__model--title">Volkswagen TERAMONT</h3>
+              <p class="cars__model--price">от 7 010 000 ₽</p>
+      
+              <div class="cars__model--more_wrapper">
+    
+                <a class="cars__model--more" href="#">Подробнее</a>
+                <svg width="26" height="15" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 6.5835C0.447715 6.5835 0 7.03121 0 7.5835C0 8.13578 0.447715 8.5835 1 8.5835V6.5835ZM25.7071 8.2906C26.0976 7.90008 26.0976 7.26691 25.7071 6.87639L19.3431 0.512428C18.9526 0.121904 18.3195 0.121904 17.9289 0.512428C17.5384 0.902953 17.5384 1.53612 17.9289 1.92664L23.5858 7.5835L17.9289 13.2404C17.5384 13.6309 17.5384 14.264 17.9289 14.6546C18.3195 15.0451 18.9526 15.0451 19.3431 14.6546L25.7071 8.2906ZM1 8.5835H25V6.5835H1V8.5835Z" fill="#0032A0" />
+                </svg>
+    
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="swiper-slide">
+    
+          <div class="cars__model">
+            <div class="cars__model--image">
+              <img class="cars__model--image_model" src="assets/images/cars__model_image.png" alt="Изображение машины">
+              <img class="cars__model--image_logo" src="assets/images/cars__model_logo_image.png" alt="Изображение логотипа">
+            </div>
+    
+            <div class="cars__model--info">
+              <h3 class="cars__model--title">Volkswagen TERAMONT</h3>
+              <p class="cars__model--price">от 7 010 000 ₽</p>
+      
+              <div class="cars__model--more_wrapper">
+    
+                <a class="cars__model--more" href="#">Подробнее</a>
+                <svg width="26" height="15" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 6.5835C0.447715 6.5835 0 7.03121 0 7.5835C0 8.13578 0.447715 8.5835 1 8.5835V6.5835ZM25.7071 8.2906C26.0976 7.90008 26.0976 7.26691 25.7071 6.87639L19.3431 0.512428C18.9526 0.121904 18.3195 0.121904 17.9289 0.512428C17.5384 0.902953 17.5384 1.53612 17.9289 1.92664L23.5858 7.5835L17.9289 13.2404C17.5384 13.6309 17.5384 14.264 17.9289 14.6546C18.3195 15.0451 18.9526 15.0451 19.3431 14.6546L25.7071 8.2906ZM1 8.5835H25V6.5835H1V8.5835Z" fill="#0032A0" />
+                </svg>
+    
+              </div>
+            </div>
+          </div>
+    
+          <div class="cars__model">
+            <div class="cars__model--image">
+              <img class="cars__model--image_model" src="assets/images/cars__model_image.png" alt="Изображение машины">
+              <img class="cars__model--image_logo" src="assets/images/cars__model_logo_image.png" alt="Изображение логотипа">
+            </div>
+    
+            <div class="cars__model--info">
+              <h3 class="cars__model--title">Volkswagen TERAMONT</h3>
+              <p class="cars__model--price">от 7 010 000 ₽</p>
+      
+              <div class="cars__model--more_wrapper">
+    
+                <a class="cars__model--more" href="#">Подробнее</a>
+                <svg width="26" height="15" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 6.5835C0.447715 6.5835 0 7.03121 0 7.5835C0 8.13578 0.447715 8.5835 1 8.5835V6.5835ZM25.7071 8.2906C26.0976 7.90008 26.0976 7.26691 25.7071 6.87639L19.3431 0.512428C18.9526 0.121904 18.3195 0.121904 17.9289 0.512428C17.5384 0.902953 17.5384 1.53612 17.9289 1.92664L23.5858 7.5835L17.9289 13.2404C17.5384 13.6309 17.5384 14.264 17.9289 14.6546C18.3195 15.0451 18.9526 15.0451 19.3431 14.6546L25.7071 8.2906ZM1 8.5835H25V6.5835H1V8.5835Z" fill="#0032A0" />
+                </svg>
+    
+              </div>
+            </div>
+          </div>
+    
+          <div class="cars__model">
+            <div class="cars__model--image">
+              <img class="cars__model--image_model" src="assets/images/cars__model_image.png" alt="Изображение машины">
+              <img class="cars__model--image_logo" src="assets/images/cars__model_logo_image.png" alt="Изображение логотипа">
+            </div>
+    
+            <div class="cars__model--info">
+              <h3 class="cars__model--title">Volkswagen TERAMONT</h3>
+              <p class="cars__model--price">от 7 010 000 ₽</p>
+      
+              <div class="cars__model--more_wrapper">
+    
+                <a class="cars__model--more" href="#">Подробнее</a>
+                <svg width="26" height="15" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 6.5835C0.447715 6.5835 0 7.03121 0 7.5835C0 8.13578 0.447715 8.5835 1 8.5835V6.5835ZM25.7071 8.2906C26.0976 7.90008 26.0976 7.26691 25.7071 6.87639L19.3431 0.512428C18.9526 0.121904 18.3195 0.121904 17.9289 0.512428C17.5384 0.902953 17.5384 1.53612 17.9289 1.92664L23.5858 7.5835L17.9289 13.2404C17.5384 13.6309 17.5384 14.264 17.9289 14.6546C18.3195 15.0451 18.9526 15.0451 19.3431 14.6546L25.7071 8.2906ZM1 8.5835H25V6.5835H1V8.5835Z" fill="#0032A0" />
+                </svg>
+    
+              </div>
+            </div>
+          </div>
+    
+          <div class="cars__model">
+            <div class="cars__model--image">
+              <img class="cars__model--image_model" src="assets/images/cars__model_image.png" alt="Изображение машины">
+              <img class="cars__model--image_logo" src="assets/images/cars__model_logo_image.png" alt="Изображение логотипа">
+            </div>
+    
+            <div class="cars__model--info">
+              <h3 class="cars__model--title">Volkswagen TERAMONT</h3>
+              <p class="cars__model--price">от 7 010 000 ₽</p>
+      
+              <div class="cars__model--more_wrapper">
+    
+                <a class="cars__model--more" href="#">Подробнее</a>
+                <svg width="26" height="15" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 6.5835C0.447715 6.5835 0 7.03121 0 7.5835C0 8.13578 0.447715 8.5835 1 8.5835V6.5835ZM25.7071 8.2906C26.0976 7.90008 26.0976 7.26691 25.7071 6.87639L19.3431 0.512428C18.9526 0.121904 18.3195 0.121904 17.9289 0.512428C17.5384 0.902953 17.5384 1.53612 17.9289 1.92664L23.5858 7.5835L17.9289 13.2404C17.5384 13.6309 17.5384 14.264 17.9289 14.6546C18.3195 15.0451 18.9526 15.0451 19.3431 14.6546L25.7071 8.2906ZM1 8.5835H25V6.5835H1V8.5835Z" fill="#0032A0" />
+                </svg>
+    
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="cars__to_catalog">В каталог</button>
+
+  </section>
+      
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="assets/scripts/main.js"></script>
 </body>
 </html>
