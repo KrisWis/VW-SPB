@@ -6,6 +6,13 @@ const cars__tab__1 = document.getElementById("cars__tab__1");
 const cars__tab__2 = document.getElementById("cars__tab__2");
 const first_cars__models = document.getElementById("first_cars__models");
 const second_cars__models = document.getElementById("second_cars__models");
+const cars__models = document.querySelectorAll(".cars__model");
+const popup__background = document.getElementById("popup__background");
+const cars__popup = document.getElementById("cars__popup");
+const cars__popup__title = document.getElementById("cars__popup--title");
+const cars__popup__price = document.getElementById("cars__popup--price");
+const cars__popup__model_image = document.getElementById("cars__popup--model_image");
+const cars__popup__model_logo_image = document.getElementById("cars__popup--model_logo_image");
 
 /* Открытие и закрытие бургер меню */
 navbar__adaptive_menuBurger.addEventListener("click", () => {
@@ -102,3 +109,16 @@ new Swiper('#details__items', {
         prevEl: '#details__arrows--prev',
     },
 });
+
+/* Нажатие на одну из машин и вызов попапа */
+for (let car_model of cars__models) {
+    car_model.addEventListener("click", () => {
+        popup__background.classList.add("popup__background");
+        cars__popup.classList.add("cars__popup__active");
+        cars__popup__title.textContent = car_model.getAttribute("data-title");
+        cars__popup__price.textContent = car_model.getAttribute("data-price");
+        cars__popup__model_image.src = car_model.getAttribute("data-model-image");
+        cars__popup__model_logo_image.src = car_model.getAttribute("data-model-logo-image");
+        // TODO: сделать вёрстку попапа, подставлять оставшиеся динамичные характеристики.
+    })
+}
