@@ -38,6 +38,8 @@ body {
     overflow-x: hidden;
     margin: 0;
     color: var(--white);
+    display: flex;
+    flex-direction: column;
 }
 
 li {
@@ -88,17 +90,21 @@ select {
 select:focus-visible {
     outline: none;
 }
-.main_btn *{
+
+.main_btn * {
     transition: 0.4s;
 }
-.main_btn{
+
+.main_btn {
     transition: 0.4s;
 }
-.main_btn:hover *{
+
+.main_btn:hover * {
     color: white;
     stroke: white;
 }
-.main_btn:hover{
+
+.main_btn:hover {
     background-color: var(--dark-blue);
     cursor: pointer;
 }
