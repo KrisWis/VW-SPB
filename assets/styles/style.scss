@@ -24,7 +24,7 @@
 %blue_button {
     border-radius: 10px;
     background: var(--dark-blue);
-    height: 50px;
+    height: 70px;
     color: #fff;
     font-weight: 700;
     font-size: 16px;
@@ -50,22 +50,23 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 1% 0;
+        padding: 10px 0px;
         max-width: 100%;
-        gap: 3%;
+        gap: 10px;
         color: var(--black);
 
         .logo {
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin-right: 30px;
         }
 
         .navbar {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10%;
+            gap: 70px;
             max-width: 100%;
 
             .active {
@@ -74,7 +75,7 @@ header {
 
             &_phone {
                 display: flex;
-                gap: 10%;
+                gap: 10px;
                 width: 100%;
 
                 @media (max-width: 1600px) {
@@ -85,7 +86,7 @@ header {
             &__menu {
                 display: flex;
                 align-items: center;
-                gap: 5%;
+                gap: 25px;
 
                 @media (max-width: 1200px) {
                     display: none;
@@ -145,7 +146,7 @@ header {
             &__info {
                 display: flex;
                 align-items: center;
-                gap: 5%;
+                gap: 20px;
                 width: 100%;
 
                 @media (max-width: 1000px) {
@@ -186,36 +187,41 @@ header {
     &_block {
         display: flex;
         position: absolute;
-        gap: 5%;
-        margin-top: 5%;
-        margin-left: 15%;
+        gap: 20px;
+        margin-top: 100px;
+        margin-left: 300px;
         width: 100%;
+
+
+        @media (max-width: 1200px) {
+            margin-top: 50px;
+            margin-left: 150px;
+        }
 
     }
 }
 
 .main_screen_frame {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 400px;
+    left: 900px;
     transform: translate(-60%, -50%);
 
     @media (max-width: 1200px) {
-        width: 70%;
-        height: 60%;
-        top: 35%;
+        left: 800px;
+        top: 350px;
     }
 }
 
 .main_screen_inputForm {
     display: flex;
     flex-direction: column;
-    gap: 5%;
+    gap: 20px;
     height: 400px;
 
     &_caption {
         font-weight: 700;
-        font-size: clamp(20px, 2vw, 48px);
+        font-size: clamp(20px, 4vw, 60px);
         line-height: 130%;
         text-align: left;
     }
@@ -224,7 +230,7 @@ header {
         display: flex;
         flex-direction: column;
         font-weight: 400;
-        font-size: clamp(10px, 2vw, 24px);
+        font-size: clamp(10px, 3vw, 24px);
         line-height: 130%;
         text-align: left;
         white-space: wrap;
@@ -235,9 +241,9 @@ header {
         background: var(--white);
         width: 100%;
         height: 40px;
-        padding-left: 3%;
+        padding-left: 10px;
 
-        @media (max-width: 800px) {
+        @media (max-width: 1200px) {
             display: none;
         }
 
@@ -249,7 +255,7 @@ header {
     &_button {
         @extend %blue_button;
 
-        @media (max-width: 800px) {
+        @media (max-width: 1200px) {
             display: none;
         }
     }
@@ -263,10 +269,14 @@ header {
 /* Navigation */
 .navigation {
     min-height: 300px;
-    padding: 5% 8%;
+    padding: 100px 100px;
 
-    @media (max-width: 1400px) {
-        padding: 5% 3%;
+    @media ((max-width: 1400px) and (min-width: 1200px)) {
+        padding: 100px 0;
+    }
+
+    @media (max-width: 600px) {
+        padding: 100px 0;
     }
 
     &_wrapper {
@@ -275,19 +285,14 @@ header {
         align-items: center;
         justify-content: center;
         font-size: 1rem;
-        gap: 3%;
+        gap: 15px;
 
         @media (max-width: 1200px) {
             grid-template-columns: repeat(3, 1fr);
         }
 
-        @media (max-width: 600px) {
+        @media (max-width: 800px) {
             grid-template-columns: repeat(2, 1fr);
-            gap: 5%;
-        }
-
-        @media (max-width: 400px) {
-            grid-template-columns: repeat(1, 1fr);
         }
     }
 
@@ -296,7 +301,7 @@ header {
         height: 230px;
         background: #fafafa;
         overflow: hidden;
-        padding: 5%;
+        padding: 20px;
         cursor: pointer;
         border-radius: 10px;
 
@@ -310,7 +315,6 @@ header {
 
             @media (max-width: 600px) {
                 text-align: center;
-                margin-left: 15%;
             }
         }
 
@@ -328,7 +332,7 @@ header {
     display: flex;
     flex-direction: column;
     color: var(--black);
-    margin-top: 10%;
+    margin-top: 50px;
     height: 700px;
 
     .h3_arrows {
@@ -342,21 +346,21 @@ header {
     }
 
     @media (max-width: 400px) {
-        margin-top: 120%;
+        margin-top: 100px;
     }
 
     &--caption {
         text-align: center;
         font-weight: 700;
         font-size: 40px;
-        margin-bottom: 3%;
+        margin-bottom: 30px;
     }
 
     &__tabs {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 1%;
+        gap: 5px;
 
         .active {
             background-color: var(--dark-blue);
@@ -380,8 +384,8 @@ header {
 
     /* Cars models */
     &__models {
-        margin-top: 5%;
-        margin-left: 10%;
+        margin-top: 50px;
+        margin-left: 150px;
         overflow-x: hidden;
         overflow-y: hidden;
         height: 250px;
@@ -410,7 +414,7 @@ header {
             display: flex;
             flex-direction: column;
             gap: 20px;
-            padding: 0 5%;
+            padding: 0 25px;
             height: 100%;
         }
 
@@ -443,14 +447,14 @@ header {
         &--more {
             display: flex;
             align-items: center;
-            gap: 3%;
+            gap: 10px;
 
             @extend %button--more;
 
             &_wrapper {
                 display: flex;
                 align-items: center;
-                gap: 5%;
+                gap: 20px;
             }
         }
     }
@@ -458,7 +462,7 @@ header {
     &__to_catalog {
         color: var(--white);
         width: 20%;
-        margin-top: 3%;
+        margin-top: 50px;
         align-self: center;
 
         @extend %blue_button;
@@ -472,7 +476,7 @@ header {
 /* H3-arrows */
 .h3_arrows {
     display: flex;
-    margin-top: 3%;
+    margin-top: 50px;
     align-items: center;
     justify-content: center;
 
@@ -492,7 +496,7 @@ header {
         display: flex;
         position: relative;
         left: 30%;
-        gap: 25%;
+        gap: 25px;
         width: 120px;
 
         @media (max-width: 600px) {
@@ -510,10 +514,14 @@ header {
     display: flex;
     flex-direction: column;
     color: var(--black);
-    margin-top: 10%;
-    height: 900px;
-    gap: 3%;
-    padding: 3% 10%;
+    margin-top: 100px;
+    min-height: 900px;
+    gap: 25px;
+    padding: 100px 150px;
+
+    @media (max-width: 1200px) {
+        padding: 100px 50px;
+    }
 
     &--caption {
         font-weight: 700;
@@ -528,10 +536,14 @@ header {
     &_wrapper {
         display: grid;
         grid-template-columns: 0.5fr 0.6fr;
-        gap: 10%;
-        margin-top: 3%;
+        gap: 150px;
+        margin-top: 50px;
 
-        @media (max-width: 1100px) {
+        @media (max-width: 1500px) {
+            grid-template-columns: 1.5fr 1fr;
+        }
+
+        @media (max-width: 1200px) {
             grid-template-columns: 1fr;
         }
     }
@@ -539,11 +551,15 @@ header {
     &_form {
         display: flex;
         flex-direction: column;
-        padding: 5%;
+        padding: 30px;
         background: #fafafa;
         height: 400px;
         width: 100%;
-        gap: 3%;
+        gap: 25px;
+
+        @media (max-width: 1500px) {
+            height: 500px;
+        }
 
         @media (max-width: 600px) {
             grid-row: 3;
@@ -562,7 +578,7 @@ header {
             align-self: center;
             width: 70%;
             white-space: wrap;
-            margin-bottom: 3%;
+            margin-bottom: 30px;
         }
 
         &--input {
@@ -570,7 +586,7 @@ header {
             height: 30px;
             width: 100%;
             background-color: var(--white);
-            padding-left: 3%;
+            padding-left: 15px;
 
             &::placeholder {
                 color: var(--dark-grey);
@@ -596,7 +612,6 @@ header {
         }
 
         &--button {
-            margin-top: 3%;
             @extend %blue_button;
         }
     }
@@ -605,7 +620,15 @@ header {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        column-gap: 20%;
+        column-gap: 50px;
+
+        @media (max-width: 1500px) {
+            column-gap: 0;
+        }
+
+        @media (max-width: 1200px) {
+            gap: 30px;
+        }
 
         @media (max-width: 600px) {
             display: none;
@@ -623,8 +646,7 @@ header {
             &--title {
                 display: flex;
                 flex-direction: column;
-                margin-top: 2%;
-                margin-left: 2%;
+                margin-left: 20px;
             }
 
             &--caption {
@@ -651,8 +673,8 @@ header {
     &_images {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 1%;
-        margin-top: 3%;
+        gap: 20px;
+        margin-top: 20px;
 
         @media (max-width: 600px) {
             display: none;
@@ -681,7 +703,7 @@ header {
             left: 3%;
             border-radius: 3px;
             background: var(--dark-grey);
-            padding: 1%;
+            padding: 5px;
             color: var(--white);
             width: 77px;
             height: 36px;
@@ -694,7 +716,7 @@ header {
             font-size: 24px;
             line-height: 130%;
             text-align: left;
-            padding: 3%;
+            padding: 20px;
         }
     }
 }
@@ -703,7 +725,7 @@ header {
 .online_services {
     display: none;
     grid-template-columns: repeat(2, 1fr);
-    gap: 3%;
+    gap: 20px;
 
     @media (max-width: 600px) {
         display: grid;
@@ -730,7 +752,7 @@ header {
         width: 100%;
         height: 165px;
         text-align: left;
-        gap: 10%;
+        gap: 50px;
 
         &:last-of-type {
             grid-column: 1 / 3;
@@ -748,18 +770,22 @@ header {
 .details {
     display: flex;
     flex-direction: column;
-    margin-top: 10%;
+    margin-top: 200px;
     color: var(--black);
+
+    @media (max-width: 1200px) {
+        margin-top: 100px;
+    }
 
     &_catalog_button {
         @extend %blue_button;
         width: 20%;
-        margin-top: 5%;
+        margin-top: 100px;
         align-self: center;
-    }
 
-    @media (max-width: 1000px) {
-        margin-top: 50%;
+        @media (max-width: 1000px) {
+            width: 80%;
+        }
     }
 
     .h3_arrows--arrows {
@@ -769,12 +795,8 @@ header {
     }
 
     &__items {
-        margin-top: 5%;
-        margin-left: 10%;
-
-        .swiper-wrapper {
-            gap: 3%;
-        }
+        margin-top: 100px;
+        margin-left: 100px;
 
         @media (max-width: 1000px) {
             margin-left: 0;
@@ -782,13 +804,8 @@ header {
             .swiper-wrapper {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
-                padding: 3%;
+                padding: 30px;
                 transform: none !important;
-
-                @media (max-width: 600px) {
-                    padding: 0;
-                    right: 7%;
-                }
             }
         }
     }
@@ -797,11 +814,13 @@ header {
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 300px;
+        min-height: 300px;
         box-shadow: 0 4px 15px 0 rgba(188, 186, 186, 0.1);
         background: #fafafa;
         border-radius: 10px;
         position: relative;
+        color: var(--black);
+        margin-bottom: 100px;
 
         @media (max-width: 1000px) {
             display: none;
@@ -818,6 +837,13 @@ header {
             &:nth-of-type(4) {
                 grid-row: 3;
                 grid-column: 1 / 3;
+
+                .details__item--img {
+                    align-self: center;
+                    height: 80%;
+                    width: 80%;
+                    top: 100px;
+                }
             }
 
             &:nth-of-type(5) {
@@ -840,12 +866,10 @@ header {
 
         &--img {
             position: relative;
-            top: 15%;
             object-fit: cover;
-
-            @media (max-width: 1000px) {
-                top: 30px;
-            }
+            top: 30px;
+            max-width: 100%;
+            max-height: 100%;
         }
     }
 }
