@@ -57,6 +57,7 @@ for (let cars_models of cars_models_types) {
 
             0: {
                 slidesPerView: 1,
+                spaceBetween: 0,
             },
         },
 
