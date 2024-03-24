@@ -194,6 +194,13 @@ header {
     }
 }
 
+.main_screen_frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-55%, -50%);
+}
+
 .main_screen_inputForm {
     display: flex;
     flex-direction: column;
@@ -398,7 +405,7 @@ header {
         margin-left: 10%;
         overflow-x: hidden;
         overflow-y: hidden;
-        height: 235px;
+        height: 250px;
         display: none;
 
         @media (max-width: 1500px) {
@@ -713,7 +720,7 @@ section.osago {
 
 .osago-container-second-item {
     flex: 1;
-    background-image: url(../images/osago.png);
+    background-image: url(../images/other/osago.png);
     border-radius: 10px;
 }
 
@@ -790,7 +797,7 @@ section.about {
 
 .about-chrono-item-description {
     white-space: wrap;
-    font-size: 20px;
+    font-size: 19.5px;
     font-weight: 400;
     line-height: 26px;
     text-align: left;
