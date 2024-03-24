@@ -73,9 +73,3 @@ button {
 a {
     text-decoration: none;
 }
-.main_screen_frame{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
