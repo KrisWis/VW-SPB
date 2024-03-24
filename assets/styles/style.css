@@ -864,6 +864,68 @@ section.osago {
   text-align: center;
   color: black;
 }
+.osago-container.second{
+  display: flex;
+  gap: 40px;
+  position: relative;
+}
+
+.osago-text.left{
+  width: 40%;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  color: black;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31.2px;
+  text-align: left;
+}
+.osago-text.right{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 59%;
+}
+.osago-text-title{
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31.2px;
+  text-align: center;
+  color: black;
+}
+.osago-text-list{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.osago-text-list li{
+  color: black;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  white-space: wrap;
+  position: relative;
+}
+.osago-text-list li::before{
+  content: "";
+  display: block;
+  background-color: #0032A0;
+  width: 26px;
+  height: 4px;
+  border-radius: 40px;
+  position: absolute;
+  top: 50%;
+  left: -35px;
+}
+.osago-text-list li a{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  text-decoration: underline;
+}
 
 /*About*/
 section.about {
