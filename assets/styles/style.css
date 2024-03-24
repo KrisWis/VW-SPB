@@ -474,6 +474,7 @@ header nav .navbar__info .navbar_offerCall {
   margin-top: 10%;
   height: 900px;
   gap: 3%;
+  padding: 3% 10%;
 }
 .services--caption {
   font-weight: 700;
@@ -488,8 +489,8 @@ header nav .navbar__info .navbar_offerCall {
 .services_wrapper {
   display: grid;
   grid-template-columns: 0.5fr 0.6fr;
-  padding: 3% 7%;
   gap: 10%;
+  margin-top: 3%;
 }
 @media (max-width: 1100px) {
   .services_wrapper {
@@ -601,6 +602,51 @@ header nav .navbar__info .navbar_offerCall {
   gap: 5%;
   margin-top: 5%;
 }
+.services_images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1%;
+  margin-top: 3%;
+}
+@media (max-width: 600px) {
+  .services_images {
+    display: none;
+  }
+}
+.services .service_image {
+  display: flex;
+  flex-direction: column;
+  background: #fafafa;
+  height: 360px;
+  width: 100%;
+}
+.services .service_image--header {
+  position: relative;
+}
+.services .service_image--img {
+  width: 100%;
+  height: 100%;
+}
+.services .service_image--service {
+  position: absolute;
+  top: 5%;
+  left: 3%;
+  border-radius: 3px;
+  background: var(--dark-grey);
+  padding: 1%;
+  color: var(--white);
+  width: 77px;
+  height: 36px;
+  cursor: pointer;
+  text-align: center;
+}
+.services .service_image--caption {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 130%;
+  text-align: left;
+  padding: 3%;
+}
 
 /* Адаптивные онлайн сервисы */
 .online_services {
@@ -649,13 +695,13 @@ header nav .navbar__info .navbar_offerCall {
 section.osago {
   background: #FAFAFA;
   padding: 40px 10%;
-  margin: 40px 0;
+  margin: 100px 0;
   width: 100%;
   position: relative;
 }
 @media (max-width: 600px) {
   section.osago {
-    margin-top: 200px;
+    margin: 200px 0;
   }
 }
 
