@@ -577,6 +577,10 @@ header {
             font-size: 16px;
             line-height: 130%;
             color: var(--dark-grey);
+
+            @media (max-width: 600px) {
+                display: none;
+            }
         }
 
         &--button {
@@ -685,6 +689,10 @@ section.osago {
     margin: 40px 0;
     width: 100%;
     position: relative;
+
+    @media (max-width: 600px) {
+        margin-top: 200px;
+    }
 }
 
 .osago-wrapper {

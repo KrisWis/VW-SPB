@@ -547,6 +547,11 @@ header nav .navbar__info .navbar_offerCall {
   line-height: 130%;
   color: var(--dark-grey);
 }
+@media (max-width: 600px) {
+  .services_form--select {
+    display: none;
+  }
+}
 .services_form--button {
   margin-top: 3%;
 }
@@ -640,6 +645,11 @@ section.osago {
   margin: 40px 0;
   width: 100%;
   position: relative;
+}
+@media (max-width: 600px) {
+  section.osago {
+    margin-top: 200px;
+  }
 }
 
 .osago-wrapper {
