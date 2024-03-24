@@ -32,7 +32,7 @@ cars__tab__2.addEventListener("click", () => {
 })
 
 /* Инициализация слайдера в секции "cars" */
-const cars_models_types = ['.first_cars__models', '.second_cars__models']
+const cars_models_types = ['#first_cars__models', '#second_cars__models']
 for (let cars_models of cars_models_types) {
     new Swiper(cars_models, {
         direction: 'horizontal',
@@ -62,8 +62,43 @@ for (let cars_models of cars_models_types) {
         },
 
         navigation: {
-            nextEl: '.cars__arrows--next',
-            prevEl: '.cars__arrows--prev',
+            nextEl: '#cars__arrows--next',
+            prevEl: '#cars__arrows--prev',
         },
     });
 }
+
+/* Инициализация слайдера в секции "Details" */
+new Swiper('#details__items', {
+    direction: 'horizontal',
+    spaceBetween: 0,
+
+    breakpoints: {
+        1400: {
+            slidesPerView: 5,
+        },
+
+        1100: {
+            slidesPerView: 4,
+            allowTouchMove: false
+        },
+
+        800: {
+            slidesPerView: 3,
+        },
+
+        600: {
+            slidesPerView: 2,
+        },
+
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+        },
+    },
+
+    navigation: {
+        nextEl: '#details__arrows--next',
+        prevEl: '#details__arrows--prev',
+    },
+});

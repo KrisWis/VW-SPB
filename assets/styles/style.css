@@ -19,7 +19,7 @@ header nav .navbar__info .navbar_offerCall:hover::after, .services_types .servic
   width: 100%;
 }
 
-.services_form--button, .cars__to_catalog, .main_screen_inputForm_button {
+.details_catalog_button, .services_form--button, .cars__to_catalog, .main_screen_inputForm_button {
   border-radius: 10px;
   background: var(--dark-blue);
   height: 50px;
@@ -214,6 +214,7 @@ header nav .navbar__info .navbar_offerCall {
   background: var(--white);
   width: 100%;
   height: 40px;
+  padding-left: 3%;
 }
 @media (max-width: 800px) {
   .main_screen_inputForm_input {
@@ -221,11 +222,9 @@ header nav .navbar__info .navbar_offerCall {
   }
 }
 .main_screen_inputForm_input::-moz-placeholder {
-  padding: 3%;
   color: var(--black);
 }
 .main_screen_inputForm_input::placeholder {
-  padding: 3%;
   color: var(--black);
 }
 @media (max-width: 800px) {
@@ -242,7 +241,12 @@ header nav .navbar__info .navbar_offerCall {
 /* Navigation */
 .navigation {
   min-height: 300px;
-  padding: 10%;
+  padding: 5% 8%;
+}
+@media (max-width: 1400px) {
+  .navigation {
+    padding: 5% 3%;
+  }
 }
 .navigation_wrapper {
   display: grid;
@@ -250,8 +254,9 @@ header nav .navbar__info .navbar_offerCall {
   align-items: center;
   justify-content: center;
   font-size: 1rem;
+  gap: 3%;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .navigation_wrapper {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -274,6 +279,7 @@ header nav .navbar__info .navbar_offerCall {
   overflow: hidden;
   padding: 5%;
   cursor: pointer;
+  border-radius: 10px;
 }
 .navigation__item--caption {
   font-weight: 700;
@@ -305,6 +311,16 @@ header nav .navbar__info .navbar_offerCall {
   height: 700px;
   /* Cars models */
 }
+@media (max-width: 900px) {
+  .cars .h3_arrows {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 600px) {
+  .cars .h3_arrows {
+    flex-direction: column;
+  }
+}
 @media (max-width: 400px) {
   .cars {
     margin-top: 120%;
@@ -321,11 +337,6 @@ header nav .navbar__info .navbar_offerCall {
   align-items: center;
   justify-content: center;
   gap: 1%;
-}
-@media (max-width: 600px) {
-  .cars__tabs {
-    flex-direction: column;
-  }
 }
 .cars__tabs .active {
   background-color: var(--dark-blue);
@@ -344,49 +355,6 @@ header nav .navbar__info .navbar_offerCall {
   .cars__tab {
     width: 50%;
   }
-}
-.cars__h3_arrows {
-  display: flex;
-  margin-top: 3%;
-  align-items: center;
-  justify-content: center;
-}
-@media (max-width: 900px) {
-  .cars__h3_arrows {
-    justify-content: flex-start;
-  }
-}
-@media (max-width: 600px) {
-  .cars__h3_arrows {
-    flex-direction: column;
-  }
-}
-.cars__h3_arrows--caption {
-  font-weight: 700;
-  font-size: 32px;
-  text-align: center;
-  left: 5%;
-  position: relative;
-}
-@media (max-width: 600px) {
-  .cars__h3_arrows--caption {
-    left: 0;
-  }
-}
-.cars__arrows {
-  display: flex;
-  position: relative;
-  left: 25%;
-  gap: 25%;
-  width: 120px;
-}
-@media (max-width: 600px) {
-  .cars__arrows {
-    left: 0;
-  }
-}
-.cars__arrows svg {
-  cursor: pointer;
 }
 .cars__models {
   margin-top: 5%;
@@ -466,6 +434,41 @@ header nav .navbar__info .navbar_offerCall {
   }
 }
 
+/* H3-arrows */
+.h3_arrows {
+  display: flex;
+  margin-top: 3%;
+  align-items: center;
+  justify-content: center;
+}
+.h3_arrows--caption {
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  left: 4%;
+  position: relative;
+}
+@media (max-width: 600px) {
+  .h3_arrows--caption {
+    left: 0;
+  }
+}
+.h3_arrows--arrows {
+  display: flex;
+  position: relative;
+  left: 30%;
+  gap: 25%;
+  width: 120px;
+}
+@media (max-width: 600px) {
+  .h3_arrows--arrows {
+    left: 0;
+  }
+}
+.h3_arrows--arrows svg {
+  cursor: pointer;
+}
+
 /* Сервисы */
 .services {
   display: flex;
@@ -530,20 +533,19 @@ header nav .navbar__info .navbar_offerCall {
   height: 30px;
   width: 100%;
   background-color: var(--white);
+  padding-left: 3%;
 }
 .services_form--input::-moz-placeholder {
   color: var(--dark-grey);
   font-weight: 400;
   font-size: 14px;
   line-height: 130%;
-  padding: 3%;
 }
 .services_form--input::placeholder {
   color: var(--dark-grey);
   font-weight: 400;
   font-size: 14px;
   line-height: 130%;
-  padding: 3%;
 }
 .services_form--select {
   border-bottom: 1px solid var(--light-grey);
@@ -689,6 +691,102 @@ header nav .navbar__info .navbar_offerCall {
   display: flex;
   flex-direction: column;
   gap: 5%;
+}
+
+/* Details */
+.details {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+  color: var(--black);
+}
+.details_catalog_button {
+  width: 20%;
+  margin-top: 5%;
+  align-self: center;
+}
+@media (max-width: 1000px) {
+  .details {
+    margin-top: 50%;
+  }
+}
+@media (max-width: 1000px) {
+  .details .h3_arrows--arrows {
+    display: none;
+  }
+}
+.details__items {
+  margin-top: 5%;
+  margin-left: 10%;
+}
+.details__items .swiper-wrapper {
+  gap: 3%;
+}
+@media (max-width: 1000px) {
+  .details__items {
+    margin-left: 0;
+  }
+  .details__items .swiper-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3%;
+    transform: none !important;
+  }
+}
+@media (max-width: 1000px) and (max-width: 600px) {
+  .details__items .swiper-wrapper {
+    padding: 0;
+    right: 7%;
+  }
+}
+.details__item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 300px;
+  box-shadow: 0 4px 15px 0 rgba(188, 186, 186, 0.1);
+  background: #fafafa;
+  border-radius: 10px;
+  position: relative;
+}
+@media (max-width: 1000px) {
+  .details__item {
+    display: none;
+    width: 80% !important;
+  }
+  .details__item:nth-of-type(1), .details__item:nth-of-type(2), .details__item:nth-of-type(3), .details__item:nth-of-type(4), .details__item:nth-of-type(5) {
+    display: flex;
+  }
+  .details__item:nth-of-type(4) {
+    grid-row: 3;
+    grid-column: 1/3;
+  }
+  .details__item:nth-of-type(5) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .details__item:nth-of-type(5) .details__item--img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+.details__item--caption {
+  font-weight: 700;
+  font-size: clamp(20px, 2rem, 32px);
+  text-align: center;
+  position: absolute;
+  align-self: center;
+}
+.details__item--img {
+  position: relative;
+  top: 15%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 1000px) {
+  .details__item--img {
+    top: 30px;
+  }
 }
 
 /*Osago*/
