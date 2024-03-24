@@ -63,7 +63,7 @@ header nav .navbar {
   max-width: 100%;
 }
 header nav .navbar .active {
-  transform: translateX(-10%);
+  transform: translateX(-5%);
 }
 header nav .navbar_phone {
   display: flex;
@@ -112,7 +112,7 @@ header nav .navbar__adaptive_menu_cross {
   position: absolute;
   top: 0;
   right: 0;
-  margin: 3%;
+  margin: 10%;
 }
 header nav .navbar__adaptive_menu li {
   cursor: pointer;
@@ -178,7 +178,14 @@ header nav .navbar__info .navbar_offerCall {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-55%, -50%);
+  transform: translate(-60%, -50%);
+}
+@media (max-width: 1200px) {
+  .main_screen_frame {
+    width: 70%;
+    height: 60%;
+    top: 35%;
+  }
 }
 
 .main_screen_inputForm {
@@ -189,7 +196,7 @@ header nav .navbar__info .navbar_offerCall {
 }
 .main_screen_inputForm_caption {
   font-weight: 700;
-  font-size: clamp(30px, 2vw, 48px);
+  font-size: clamp(20px, 2vw, 48px);
   line-height: 130%;
   text-align: left;
 }
@@ -197,7 +204,7 @@ header nav .navbar__info .navbar_offerCall {
   display: flex;
   flex-direction: column;
   font-weight: 400;
-  font-size: clamp(15px, 2vw, 24px);
+  font-size: clamp(10px, 2vw, 24px);
   line-height: 130%;
   text-align: left;
   white-space: wrap;
@@ -255,7 +262,7 @@ header nav .navbar__info .navbar_offerCall {
     gap: 5%;
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 400px) {
   .navigation_wrapper {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -297,6 +304,11 @@ header nav .navbar__info .navbar_offerCall {
   margin-top: 10%;
   height: 700px;
   /* Cars models */
+}
+@media (max-width: 400px) {
+  .cars {
+    margin-top: 120%;
+  }
 }
 .cars--caption {
   text-align: center;
@@ -397,11 +409,6 @@ header nav .navbar__info .navbar_offerCall {
   flex-direction: column;
   height: 100%;
   position: relative;
-}
-@media (max-width: 1200px) {
-  .cars__model {
-    width: 100% !important;
-  }
 }
 @media (max-width: 600px) {
   .cars__model {
