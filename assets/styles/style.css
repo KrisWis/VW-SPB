@@ -879,6 +879,7 @@ section.osago {
   margin: 100px 0;
   width: 100%;
   position: relative;
+  order: 9;
 }
 @media (max-width: 600px) {
   section.osago {
