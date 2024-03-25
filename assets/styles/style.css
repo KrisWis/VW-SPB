@@ -1450,12 +1450,20 @@ section.about {
     height: 360px;
   }
 }
+/* Map */
+.map {
+  order: 10;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  padding: 0 160px;
+}
+
 /*Footer*/
 footer {
   background: #EEEEEE;
   width: 100%;
   position: relative;
-  order: 10;
+  order: 11;
 }
 
 .footer-container {
