@@ -1282,6 +1282,13 @@ a.footer-phone {
   text-align: left;
   color: #3F3F3F;
 }
+#auto-find{
+  display: none;
+}
+.footer-logo{
+  display: flex;
+  justify-content: start;
+}
   @media(max-width: 650px){
   .footer-container{
     padding: 30px 10px 30px 10px;
