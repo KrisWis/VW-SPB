@@ -1281,6 +1281,7 @@ a.footer-phone {
   line-height: 15.6px;
   text-align: left;
   color: #3F3F3F;
+}
   @media(max-width: 650px){
   .footer-container{
     padding: 30px 10px 30px 10px;
