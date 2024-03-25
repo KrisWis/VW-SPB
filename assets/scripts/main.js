@@ -10,9 +10,13 @@ const cars__models = document.querySelectorAll(".cars__model");
 const popup__background = document.getElementById("popup__background");
 const cars__popup = document.getElementById("cars__popup");
 const cars__popup__title = document.getElementById("cars__popup--title");
+const cars__popup__full_title = document.getElementById("cars__popup--full_title");
 const cars__popup__price = document.getElementById("cars__popup--price");
 const cars__popup__model_image = document.getElementById("cars__popup--model_image");
 const cars__popup__model_logo_image = document.getElementById("cars__popup--model_logo_image");
+const cars__popup__close = document.getElementById("cars__popup__close");
+const cars__popup__characteristics = document.getElementById("cars__popup__characteristics");
+
 
 /* Открытие и закрытие бургер меню */
 navbar__adaptive_menuBurger.addEventListener("click", () => {
@@ -113,12 +117,32 @@ new Swiper('#details__items', {
 /* Нажатие на одну из машин и вызов попапа */
 for (let car_model of cars__models) {
     car_model.addEventListener("click", () => {
+
         popup__background.classList.add("popup__background");
         cars__popup.classList.add("cars__popup__active");
-        cars__popup__title.textContent = car_model.getAttribute("data-title");
+
+        cars__popup__title.textContent = car_model.getAttribute("data-title").split(" ").splice(0, 2).join(" ");
+        cars__popup__full_title.textContent = car_model.getAttribute("data-title");
         cars__popup__price.textContent = car_model.getAttribute("data-price");
         cars__popup__model_image.src = car_model.getAttribute("data-model-image");
-        cars__popup__model_logo_image.src = car_model.getAttribute("data-model-logo-image");
-        // TODO: сделать вёрстку попапа, подставлять оставшиеся динамичные характеристики.
+
+        const model_characteristics = car_model.getAttribute("data-characteristics").split(";");
+
+        for (let model_characteristic of model_characteristics) {
+            const model_characteristic__title = model_characteristic.split(":")[0]
+            const model_characteristic__info = model_characteristic.split(":")[1]
+
+            cars__popup__characteristics.insertAdjacentHTML(`beforeend`,
+                `<div class="cars__popup--characteristic">
+                <h4 class="cars__popup--characteristic_title">${model_characteristic__title}</h4>
+                <p class="cars__popup--characteristic_info">${model_characteristic__info}</p>
+            </div>`);
+        }
     })
 }
+
+/* Закрытие попапа */
+cars__popup__close.addEventListener("click", () => {
+    popup__background.classList.remove("popup__background");
+    cars__popup.classList.remove("cars__popup__active");
+})

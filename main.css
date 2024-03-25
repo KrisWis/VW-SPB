@@ -127,4 +127,5 @@ select:focus-visible {
     min-height: 100vh;
     background-color: #060637;
     opacity: .6;
+    z-index: 1;
 }
