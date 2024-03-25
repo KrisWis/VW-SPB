@@ -107,9 +107,12 @@ select:focus-visible {
     color: white;
     stroke: white;
 }
+.main_btn.main_btn-path-fill:hover path{
+    fill: white;
+}
 
 .main_btn:hover {
-    background-color: var(--dark-blue);
+    background-color: var(--dark-blue) !important;
     cursor: pointer;
 }
 
