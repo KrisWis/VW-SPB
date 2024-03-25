@@ -548,6 +548,11 @@ header {
         min-height: 750px;
         max-height: 850px;
 
+        @media (max-width: 1000px) {
+            height: 100%;
+            width: 90%;
+        }
+
         &__active {
             display: flex;
         }
@@ -555,6 +560,8 @@ header {
         &--close {
             align-self: flex-end;
             cursor: pointer;
+            width: 5%;
+            height: 15%;
         }
 
         &--header {
@@ -571,6 +578,10 @@ header {
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+
+            @media (max-width: 400px) {
+                font-size: 40px;
+            }
         }
 
         &--model_image {
@@ -585,12 +596,24 @@ header {
             display: flex;
             flex-direction: column;
             padding: 0 90px;
+
+            @media (max-width: 700px) {
+                padding: 0 30px;
+            }
+
+            @media (max-width: 400px) {
+                padding: 0;
+            }
         }
 
         &--full_title {
             font-weight: 900;
             font-size: 24px;
             text-align: left;
+
+            @media (max-width: 400px) {
+                font-size: 18px;
+            }
         }
 
         &--price {
@@ -607,12 +630,26 @@ header {
             margin-top: 20px;
             padding: 0 90px;
             gap: 20px;
-            overflow: auto
+            overflow: auto;
+
+            @media (max-width: 700px) {
+                padding: 0 30px;
+            }
+
+            @media (max-width: 400px) {
+                padding: 0;
+            }
         }
 
         &--characteristic {
             display: flex;
             justify-content: space-between;
+
+            @media (max-width: 500px) {
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
 
             &_title {
                 font-weight: 400;
@@ -620,6 +657,10 @@ header {
                 color: var(--grey);
                 width: 45%;
                 text-align: left;
+
+                @media (max-width: 500px) {
+                    text-align: center;
+                }
             }
 
             &_info {
@@ -639,6 +680,15 @@ header {
             font-size: 20px;
             padding: 0 90px;
             margin-bottom: 50px;
+
+            @media (max-width: 700px) {
+                padding: 0 30px;
+            }
+
+            @media (max-width: 400px) {
+                flex-direction: column;
+                padding: 0;
+            }
         }
 
         &--to_catalog {
@@ -649,6 +699,11 @@ header {
             height: 52px;
             color: var(--black);
             font-weight: 700;
+            white-space: nowrap;
+
+            @media (max-width: 400px) {
+                width: 200px;
+            }
         }
 
         &--offerCall {
@@ -659,6 +714,11 @@ header {
             background: var(--dark-blue);
             color: var(--white);
             font-weight: 500;
+            white-space: nowrap;
+
+            @media (max-width: 400px) {
+                width: 200px;
+            }
         }
     }
 }
