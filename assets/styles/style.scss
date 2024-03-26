@@ -339,14 +339,14 @@ header {
             left: 70px;
 
             @media (max-width: 600px) {
-                left: 120px;
+                left: 170px;
             }
 
-            @media (max-width: 500px) {
+            @media (max-width: 530px) {
                 left: 100px;
             }
 
-            @media (max-width: 500px) {
+            @media (max-width: 400px) {
                 left: 70px;
             }
         }
@@ -1119,6 +1119,9 @@ header {
                 align-items: baseline;
                 white-space: wrap;
                 text-align: left;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 130%;
 
                 &::before {
                     content: "";
@@ -1343,7 +1346,7 @@ header {
     .services_form {
         width: 443px;
 
-        @media (max-width: 800px) {
+        @media (max-width: 400px) {
             width: 100%;
         }
 
@@ -1437,6 +1440,14 @@ header {
             }
         }
 
+        @media (max-width: 500px) {
+            &:nth-of-type(4) {
+                .online_service--caption {
+                    font-size: 18px;
+                }
+            }
+        }
+
         &:hover {
             .online_service--caption {
                 color: var(--white);
@@ -1488,7 +1499,7 @@ header {
         max-width: 560px;
     }
 
-    @media (max-width: 400px) {
+    @media (max-width: 600px) {
         width: 100%;
     }
 

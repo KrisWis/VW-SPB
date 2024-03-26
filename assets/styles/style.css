@@ -329,15 +329,15 @@ header nav .navbar__info .navbar_offerCall {
 }
 @media (max-width: 600px) and (max-width: 600px) {
   .main_screen__form_block {
-    left: 120px;
+    left: 170px;
   }
 }
-@media (max-width: 600px) and (max-width: 500px) {
+@media (max-width: 600px) and (max-width: 530px) {
   .main_screen__form_block {
     left: 100px;
   }
 }
-@media (max-width: 600px) and (max-width: 500px) {
+@media (max-width: 600px) and (max-width: 400px) {
   .main_screen__form_block {
     left: 70px;
   }
@@ -1087,6 +1087,9 @@ header nav .navbar__info .navbar_offerCall {
   align-items: baseline;
   white-space: wrap;
   text-align: left;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 130%;
 }
 .services_text--item__paragraph::before {
   content: "";
@@ -1311,7 +1314,7 @@ header nav .navbar__info .navbar_offerCall {
 .online_services .services_form {
   width: 443px;
 }
-@media (max-width: 800px) {
+@media (max-width: 400px) {
   .online_services .services_form {
     width: 100%;
   }
@@ -1409,6 +1412,11 @@ header nav .navbar__info .navbar_offerCall {
     width: 100%;
   }
 }
+@media (max-width: 500px) {
+  .online_services .online_service:nth-of-type(4) .online_service--caption {
+    font-size: 18px;
+  }
+}
 .online_services .online_service:hover .online_service--caption {
   color: var(--white);
 }
@@ -1456,7 +1464,7 @@ header nav .navbar__info .navbar_offerCall {
     max-width: 560px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .services_form {
     width: 100%;
   }
