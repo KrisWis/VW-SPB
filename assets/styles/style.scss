@@ -320,6 +320,34 @@ header {
     }
 }
 
+.navbar_offerCall-mobile {
+    display: none;
+    position: relative;
+}
+
+@media(max-width: 650px) {
+    .navbar_offerCall-mobile {
+        display: inline;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19.5px;
+        text-align: left;
+    }
+
+    .navbar_offerCall-mobile::after {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 3px;
+        width: 0%;
+        transition: width 0.3s linear;
+        background-color: var(--dark-blue);
+        bottom: -5px;
+        border-radius: 10px;
+        width: 100%;
+    }
+}
+
 /* Navigation */
 .navigation {
     min-height: 300px;
