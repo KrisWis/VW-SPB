@@ -634,7 +634,7 @@ header {
         @extend %blue_button;
         border-radius: 10px;
 
-        @media (max-width: 500px) {
+        @media (max-width: 400px) {
             width: 100%;
         }
     }
