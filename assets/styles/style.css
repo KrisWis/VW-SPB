@@ -1414,7 +1414,7 @@ header nav .navbar__info .navbar_offerCall {
 }
 @media (max-width: 500px) {
   .online_services .online_service:nth-of-type(4) .online_service--caption {
-    font-size: 18px;
+    word-break: break-word;
   }
 }
 .online_services .online_service:hover .online_service--caption {

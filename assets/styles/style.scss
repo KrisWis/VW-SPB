@@ -1443,7 +1443,7 @@ header {
         @media (max-width: 500px) {
             &:nth-of-type(4) {
                 .online_service--caption {
-                    font-size: 18px;
+                    word-break: break-word;
                 }
             }
         }
