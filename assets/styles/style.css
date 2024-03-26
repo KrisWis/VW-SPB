@@ -363,7 +363,7 @@ header nav .navbar__info .navbar_offerCall {
 }
 @media (max-width: 600px) and (max-width: 450px) {
   .main_screen__form_block {
-    left: 90px;
+    left: 80px;
     width: 80%;
   }
 }
@@ -527,8 +527,8 @@ header nav .navbar__info .navbar_offerCall {
 }
 @media (max-width: 600px) {
   .cars .services_form--select {
-    width: 100%;
-    margin-left: 0;
+    width: 95%;
+    margin-left: 10px;
     margin-right: 0;
   }
 }
@@ -1349,7 +1349,7 @@ header nav .navbar__info .navbar_offerCall {
 .online_services .services_form {
   width: 443px;
 }
-@media (max-width: 400px) {
+@media (max-width: 430px) {
   .online_services .services_form {
     width: 100%;
   }
@@ -1398,13 +1398,6 @@ header nav .navbar__info .navbar_offerCall {
 @media (max-width: 500px) {
   .online_services_wrapper {
     grid-template-columns: repeat(2, 165px);
-    justify-content: center;
-  }
-}
-@media (max-width: 400px) {
-  .online_services_wrapper {
-    grid-template-columns: repeat(2, 165px);
-    justify-content: flex-start;
   }
 }
 @media (max-width: 360px) {
