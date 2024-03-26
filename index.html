@@ -29,22 +29,28 @@
       <div class="navbar">
 
         <ul class="navbar__menu">
-          <li><a href="#">Каталог</a></li>
-          <li><a href="#">Сервис</a></li>
-          <li><a href="#">Услуги</a></li>
-          <li><a href="#">Акции</a></li>
-          <li><a href="#">О компании</a></li>
-          <li><a href="#">Контакты</a></li>
+          <?php 
+          $menu_locations = get_nav_menu_locations();
+          $menu_id = $menu_locations['header-menu']; // Замените 'your_menu_location_slug' на слаг вашего меню
+          $menu_items = wp_get_nav_menu_items($menu_id);
+          foreach($menu_items as $menu_item):
+          ?>
+            <li><a href="<?php echo $menu_item->url; ?>"><?php echo $menu_item->title; ?></a></li>
+          <?php
+          endforeach;
+          ?>
         </ul>
   
         <div class="navbar__info">
           <address class="navbar_street">Санкт-Петербург, Московский проспект, д. 154</address>
 
           <div class="navbar_phone">
-            <a href="tel:+78124457931" class="navbar_phoneNumber">+7 812 445-79-31</a>
-            <a href="#" class="navbar_offerCall">Заказать звонок</a>
+            <a class="navbar_phoneNumber" href = "">+7 812 445-79-31</p>
+            <a class="navbar_offerCall" href = "#">Заказать звонок</a>
           </div>
         </div>
+        
+        <a href="" class="navbar_offerCall-mobile">Заказать звонок</a>
 
         <div class="navbar__adaptive_menuBurger" id="navbar__adaptive_menuBurger">
           <svg width="33" height="19" viewBox="0 0 33 19" fill="none" xmlns="http://www.w3.org/2000/svg">
