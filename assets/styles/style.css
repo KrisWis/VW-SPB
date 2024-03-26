@@ -230,13 +230,13 @@ header nav .navbar__info .navbar_offerCall {
     display: block;
     height: 95%;
     bottom: 5px;
-    right: 170px;
-    width: 70%;
+    right: 120px;
+    width: 65%;
   }
 }
 @media (max-width: 600px) and (max-width: 500px) {
   .main_screen_frame__2 {
-    right: 80px;
+    right: 60px;
     width: 80%;
   }
 }
@@ -326,6 +326,23 @@ header nav .navbar__info .navbar_offerCall {
   .main_screen__form_block {
     left: 70px;
   }
+}
+@media (max-width: 600px) and (max-width: 600px) {
+  .main_screen__form_block {
+    left: 120px;
+  }
+}
+@media (max-width: 600px) and (max-width: 500px) {
+  .main_screen__form_block {
+    left: 100px;
+  }
+}
+@media (max-width: 600px) and (max-width: 500px) {
+  .main_screen__form_block {
+    left: 70px;
+  }
+}
+@media (max-width: 600px) {
   .main_screen_inputForm_caption {
     font-size: 35px;
   }
@@ -373,6 +390,11 @@ header nav .navbar__info .navbar_offerCall {
   }
 }
 @media (max-width: 800px) {
+  .navigation {
+    padding: 100px 20px;
+  }
+}
+@media (max-width: 400px) {
   .navigation {
     padding: 100px 10px;
   }
@@ -455,6 +477,27 @@ header nav .navbar__info .navbar_offerCall {
   order: 3;
   /* Cars models */
   /* Cars popup */
+}
+.cars .services_form--select {
+  margin-left: 140px;
+  width: 15%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--black);
+}
+@media (max-width: 1200px) {
+  .cars .services_form--select {
+    width: 30%;
+  }
+}
+@media (max-width: 600px) {
+  .cars .services_form--select {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 @media (max-width: 900px) {
   .cars .h3_arrows {
@@ -548,6 +591,7 @@ header nav .navbar__info .navbar_offerCall {
 @media (max-width: 400px) {
   .cars__model--info {
     padding: 0 5px;
+    gap: 10px;
   }
 }
 .cars__model--image {
@@ -563,7 +607,6 @@ header nav .navbar__info .navbar_offerCall {
 @media (max-width: 400px) {
   .cars__model--image_model {
     width: 100%;
-    height: 80%;
   }
 }
 .cars__model--title {
@@ -605,6 +648,11 @@ header nav .navbar__info .navbar_offerCall {
   align-self: center;
   font-weight: 500;
   border-radius: 10px;
+}
+@media (max-width: 1000px) {
+  .cars__to_catalog {
+    width: 50%;
+  }
 }
 @media (max-width: 400px) {
   .cars__to_catalog {
@@ -1048,6 +1096,7 @@ header nav .navbar__info .navbar_offerCall {
   min-width: 20px;
   position: relative;
   left: 0;
+  border-radius: 5px;
 }
 
 /* Details */
@@ -1377,7 +1426,7 @@ header nav .navbar__info .navbar_offerCall {
 }
 @media (max-width: 500px) {
   .online_services .online_service--caption {
-    font-size: 17px;
+    font-size: 20px;
   }
 }
 .online_services .online_service--caption span {
@@ -1394,6 +1443,7 @@ header nav .navbar__info .navbar_offerCall {
   width: 560px;
   gap: 10px;
   justify-self: center;
+  border-radius: 10px;
 }
 @media (max-width: 1500px) {
   .services_form {
@@ -1403,13 +1453,12 @@ header nav .navbar__info .navbar_offerCall {
 @media (max-width: 800px) {
   .services_form {
     grid-row: 2/3;
-    width: 100%;
     max-width: 560px;
   }
 }
 @media (max-width: 400px) {
   .services_form {
-    width: 110%;
+    width: 100%;
   }
 }
 .services_form--caption {
