@@ -61,6 +61,13 @@ header nav .logo {
   align-items: center;
   margin-right: 30px;
 }
+@media (max-width: 400px) {
+  header nav .logo {
+    width: 40px;
+    height: 40px;
+    font-size: 8px;
+  }
+}
 header nav .navbar {
   display: flex;
   align-items: center;
@@ -70,6 +77,11 @@ header nav .navbar {
 }
 header nav .navbar .active {
   transform: translateX(-5%);
+}
+@media (max-width: 400px) {
+  header nav .navbar .active {
+    transform: translateX(-10%);
+  }
 }
 header nav .navbar_phone {
   display: flex;
@@ -351,13 +363,8 @@ header nav .navbar__info .navbar_offerCall {
 }
 @media (max-width: 600px) and (max-width: 450px) {
   .main_screen__form_block {
-    left: 65px;
-    width: 80%;
-  }
-}
-@media (max-width: 600px) and (max-width: 420px) {
-  .main_screen__form_block {
     left: 90px;
+    width: 80%;
   }
 }
 @media (max-width: 600px) and (max-width: 400px) {
@@ -489,7 +496,7 @@ header nav .navbar__info .navbar_offerCall {
 }
 @media (max-width: 400px) {
   .navigation__item--image {
-    right: 5px;
+    right: 10px;
   }
 }
 
@@ -683,6 +690,7 @@ header nav .navbar__info .navbar_offerCall {
 @media (max-width: 400px) {
   .cars__to_catalog {
     width: 100%;
+    height: 70px;
   }
 }
 .cars__popup {
@@ -1001,6 +1009,7 @@ header nav .navbar__info .navbar_offerCall {
 @media (max-width: 800px) {
   .services_types .service_type--title {
     margin-left: 5px;
+    gap: 10px;
   }
 }
 .services_types .service_type--caption {
@@ -1213,7 +1222,7 @@ header nav .navbar__info .navbar_offerCall {
 }
 @media (max-width: 1000px) and (max-width: 500px) {
   .details__items .swiper-wrapper {
-    right: 55px;
+    right: 50px;
   }
 }
 .details__item {
@@ -1493,6 +1502,7 @@ header nav .navbar__info .navbar_offerCall {
 @media (max-width: 600px) {
   .services_form {
     width: 100%;
+    padding: 10px;
   }
 }
 .services_form--caption {
