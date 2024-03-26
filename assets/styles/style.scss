@@ -248,14 +248,23 @@ header {
             right: 120px;
             width: 65%;
 
+            @media (max-width: 530px) {
+                right: 90px;
+                width: 75%;
+            }
+
             @media (max-width: 500px) {
                 right: 60px;
                 width: 80%;
             }
 
-            @media (max-width: 400px) {
-                right: 30px;
+            @media (max-width: 450px) {
+                right: 35px;
                 width: 90%;
+            }
+
+            @media (max-width: 400px) {
+                right: 20px;
             }
 
         }
@@ -342,12 +351,22 @@ header {
                 left: 170px;
             }
 
-            @media (max-width: 530px) {
-                left: 100px;
+            @media (max-width: 550px) {
+                left: 130px;
+                width: 55%;
+            }
+
+            @media (max-width: 450px) {
+                left: 65px;
+                width: 80%;
+            }
+
+            @media (max-width: 420px) {
+                left: 90px;
             }
 
             @media (max-width: 400px) {
-                left: 70px;
+                left: 75px;
             }
         }
 
@@ -357,7 +376,10 @@ header {
             }
 
             &_desc {
-                font-size: 13px;
+                line-height: 130%;
+                font-weight: normal;
+                font-size: 16px;
+                white-space: wrap;
             }
         }
     }

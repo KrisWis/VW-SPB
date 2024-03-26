@@ -234,16 +234,27 @@ header nav .navbar__info .navbar_offerCall {
     width: 65%;
   }
 }
+@media (max-width: 600px) and (max-width: 530px) {
+  .main_screen_frame__2 {
+    right: 90px;
+    width: 75%;
+  }
+}
 @media (max-width: 600px) and (max-width: 500px) {
   .main_screen_frame__2 {
     right: 60px;
     width: 80%;
   }
 }
+@media (max-width: 600px) and (max-width: 450px) {
+  .main_screen_frame__2 {
+    right: 35px;
+    width: 90%;
+  }
+}
 @media (max-width: 600px) and (max-width: 400px) {
   .main_screen_frame__2 {
-    right: 30px;
-    width: 90%;
+    right: 20px;
   }
 }
 
@@ -332,14 +343,26 @@ header nav .navbar__info .navbar_offerCall {
     left: 170px;
   }
 }
-@media (max-width: 600px) and (max-width: 530px) {
+@media (max-width: 600px) and (max-width: 550px) {
   .main_screen__form_block {
-    left: 100px;
+    left: 130px;
+    width: 55%;
+  }
+}
+@media (max-width: 600px) and (max-width: 450px) {
+  .main_screen__form_block {
+    left: 65px;
+    width: 80%;
+  }
+}
+@media (max-width: 600px) and (max-width: 420px) {
+  .main_screen__form_block {
+    left: 90px;
   }
 }
 @media (max-width: 600px) and (max-width: 400px) {
   .main_screen__form_block {
-    left: 70px;
+    left: 75px;
   }
 }
 @media (max-width: 600px) {
@@ -347,7 +370,10 @@ header nav .navbar__info .navbar_offerCall {
     font-size: 35px;
   }
   .main_screen_inputForm_desc {
-    font-size: 13px;
+    line-height: 130%;
+    font-weight: normal;
+    font-size: 16px;
+    white-space: wrap;
   }
 }
 
