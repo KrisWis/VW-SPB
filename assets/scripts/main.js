@@ -128,6 +128,8 @@ for (let car_model of cars__models) {
 
         const model_characteristics = car_model.getAttribute("data-characteristics").split(";");
 
+        cars__popup__characteristics.innerHTML = '';
+
         for (let model_characteristic of model_characteristics) {
             const model_characteristic__title = model_characteristic.split(":")[0]
             const model_characteristic__info = model_characteristic.split(":")[1]
