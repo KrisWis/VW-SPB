@@ -204,6 +204,11 @@ header nav .navbar__info .navbar_offerCall {
 .main_screen_frame__2 {
   display: none;
 }
+@media (max-width: 1700px) {
+  .main_screen_frame {
+    width: 80%;
+  }
+}
 @media (max-width: 1400px) {
   .main_screen_frame {
     width: 95%;
@@ -215,7 +220,7 @@ header nav .navbar__info .navbar_offerCall {
     bottom: 75px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .main_screen_frame {
     height: 65%;
     bottom: 120px;
@@ -223,9 +228,22 @@ header nav .navbar__info .navbar_offerCall {
   }
   .main_screen_frame__2 {
     display: block;
-    height: 100%;
-    bottom: -10px;
-    right: 20px;
+    height: 95%;
+    bottom: 5px;
+    right: 170px;
+    width: 70%;
+  }
+}
+@media (max-width: 600px) and (max-width: 500px) {
+  .main_screen_frame__2 {
+    right: 80px;
+    width: 80%;
+  }
+}
+@media (max-width: 600px) and (max-width: 400px) {
+  .main_screen_frame__2 {
+    right: 30px;
+    width: 90%;
   }
 }
 
@@ -294,6 +312,8 @@ header nav .navbar__info .navbar_offerCall {
 .main_screen_formImage {
   width: 150%;
   height: 150%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (max-width: 600px) {
@@ -326,6 +346,7 @@ header nav .navbar__info .navbar_offerCall {
     font-weight: 700;
     line-height: 19.5px;
     text-align: left;
+    white-space: nowrap;
   }
   .navbar_offerCall-mobile::after {
     content: "";
@@ -353,7 +374,7 @@ header nav .navbar__info .navbar_offerCall {
 }
 @media (max-width: 800px) {
   .navigation {
-    padding: 100px 20px;
+    padding: 100px 10px;
   }
 }
 .navigation_wrapper {
@@ -401,6 +422,7 @@ header nav .navbar__info .navbar_offerCall {
 @media (max-width: 600px) {
   .navigation__item--caption {
     text-align: center;
+    font-size: 20px;
   }
 }
 .navigation__item--image {
@@ -415,6 +437,11 @@ header nav .navbar__info .navbar_offerCall {
   .navigation__item--image {
     right: 20px;
     width: 115%;
+  }
+}
+@media (max-width: 400px) {
+  .navigation__item--image {
+    right: 5px;
   }
 }
 
@@ -494,6 +521,11 @@ header nav .navbar__info .navbar_offerCall {
 .cars .active_cars {
   display: flex;
 }
+@media (max-width: 400px) {
+  .cars .swiper-wrapper {
+    width: 80%;
+  }
+}
 .cars__model {
   display: flex;
   flex-direction: column;
@@ -513,6 +545,11 @@ header nav .navbar__info .navbar_offerCall {
   padding: 0 25px;
   height: 50%;
 }
+@media (max-width: 400px) {
+  .cars__model--info {
+    padding: 0 5px;
+  }
+}
 .cars__model--image {
   width: 100%;
   height: 50%;
@@ -523,17 +560,33 @@ header nav .navbar__info .navbar_offerCall {
   right: 15%;
   top: 0;
 }
+@media (max-width: 400px) {
+  .cars__model--image_model {
+    width: 100%;
+    height: 80%;
+  }
+}
 .cars__model--title {
   font-weight: 700;
   font-size: 24px;
   text-align: left;
   white-space: nowrap;
 }
+@media (max-width: 400px) {
+  .cars__model--title {
+    font-size: 16px;
+  }
+}
 .cars__model--price {
   font-weight: 400;
   font-size: 20px;
   color: var(--dark-grey);
   text-align: left;
+}
+@media (max-width: 400px) {
+  .cars__model--price {
+    font-size: 16px;
+  }
 }
 .cars__model--more {
   display: flex;
@@ -553,9 +606,9 @@ header nav .navbar__info .navbar_offerCall {
   font-weight: 500;
   border-radius: 10px;
 }
-@media (max-width: 600px) {
+@media (max-width: 400px) {
   .cars__to_catalog {
-    width: 90%;
+    width: 100%;
   }
 }
 .cars__popup {
@@ -764,6 +817,7 @@ header nav .navbar__info .navbar_offerCall {
 @media (max-width: 600px) {
   .h3_arrows--caption {
     left: 0;
+    font-size: 24px;
   }
 }
 .h3_arrows--arrows {
@@ -791,6 +845,7 @@ header nav .navbar__info .navbar_offerCall {
   gap: 25px;
   padding: 100px 150px;
   order: 4;
+  /* Текст после сервисов, который идёт в адаптиве */
 }
 @media (max-width: 800px) {
   .services {
@@ -800,17 +855,13 @@ header nav .navbar__info .navbar_offerCall {
 @media (max-width: 1400px) {
   .services {
     padding: 100px 15px;
+    padding-bottom: 0;
   }
 }
 .services--caption {
   font-weight: 700;
   font-size: 40px;
   text-align: center;
-}
-@media (max-width: 600px) {
-  .services--caption {
-    display: none;
-  }
 }
 .services_wrapper {
   display: grid;
@@ -952,6 +1003,52 @@ header nav .navbar__info .navbar_offerCall {
   text-align: left;
   padding: 20px;
 }
+.services_text {
+  display: none;
+  flex-direction: column;
+  color: var(--black);
+  order: 9;
+  margin-top: 30px;
+}
+@media (max-width: 500px) {
+  .services_text {
+    display: flex;
+  }
+}
+.services_text--item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.services_text--item__caption {
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.services_text--item__paragraphs {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  width: 335px;
+}
+.services_text--item__paragraph {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  align-items: baseline;
+  white-space: wrap;
+  text-align: left;
+}
+.services_text--item__paragraph::before {
+  content: "";
+  display: block;
+  background-color: var(--dark-blue);
+  height: 3px;
+  min-width: 20px;
+  position: relative;
+  left: 0;
+}
 
 /* Details */
 .details {
@@ -980,7 +1077,14 @@ header nav .navbar__info .navbar_offerCall {
     width: 80%;
     height: 50px;
     font-size: 20px;
-    font-weight: 900;
+    font-weight: 500;
+  }
+}
+@media (max-width: 400px) {
+  .details_catalog_button {
+    width: 95%;
+    position: relative;
+    bottom: 70px;
   }
 }
 .details .h3_arrows--arrows {
@@ -1029,7 +1133,7 @@ header nav .navbar__info .navbar_offerCall {
     right: 70px;
   }
 }
-@media (max-width: 1000px) and (max-width: 400px) {
+@media (max-width: 1000px) and (max-width: 500px) {
   .details__items .swiper-wrapper {
     right: 55px;
   }
@@ -1052,11 +1156,22 @@ header nav .navbar__info .navbar_offerCall {
     height: 280px;
   }
 }
+@media (max-width: 1000px) and (max-width: 800px) {
+  .details__item {
+    width: 95% !important;
+  }
+}
+@media (max-width: 1000px) and (max-width: 500px) {
+  .details__item {
+    width: 95% !important;
+    height: 275px;
+    margin-bottom: 0;
+  }
+}
 @media (max-width: 1000px) and (max-width: 400px) {
   .details__item {
     width: 100% !important;
     height: 250px;
-    margin-bottom: 0;
   }
 }
 @media (max-width: 1000px) {
@@ -1066,15 +1181,7 @@ header nav .navbar__info .navbar_offerCall {
     z-index: 1;
     width: 100% !important;
     height: 400px;
-    margin-bottom: 150px;
   }
-}
-@media (max-width: 1000px) and (max-width: 800px) {
-  .details__item:nth-of-type(4) {
-    margin-bottom: 150px;
-  }
-}
-@media (max-width: 1000px) {
   .details__item:nth-of-type(4) .details__item--img {
     align-self: center;
     height: 100%;
@@ -1160,6 +1267,11 @@ header nav .navbar__info .navbar_offerCall {
     width: 100%;
   }
 }
+@media (max-width: 600px) {
+  .online_services .services_form--select {
+    display: none;
+  }
+}
 .online_services__servicesForm {
   display: grid;
   grid-template-columns: 0.6fr 0.4fr;
@@ -1183,7 +1295,7 @@ header nav .navbar__info .navbar_offerCall {
 }
 @media (max-width: 500px) {
   .online_services__servicesForm {
-    padding: 0;
+    padding: 3px;
   }
 }
 .online_services_wrapper {
@@ -1265,7 +1377,7 @@ header nav .navbar__info .navbar_offerCall {
 }
 @media (max-width: 500px) {
   .online_services .online_service--caption {
-    font-size: 18px;
+    font-size: 17px;
   }
 }
 .online_services .online_service--caption span {
@@ -1285,7 +1397,7 @@ header nav .navbar__info .navbar_offerCall {
 }
 @media (max-width: 1500px) {
   .services_form {
-    height: 500px;
+    height: 400px;
   }
 }
 @media (max-width: 800px) {
@@ -1293,6 +1405,11 @@ header nav .navbar__info .navbar_offerCall {
     grid-row: 2/3;
     width: 100%;
     max-width: 560px;
+  }
+}
+@media (max-width: 400px) {
+  .services_form {
+    width: 110%;
   }
 }
 .services_form--caption {
@@ -1308,6 +1425,11 @@ header nav .navbar__info .navbar_offerCall {
   width: 70%;
   white-space: wrap;
   margin-bottom: 30px;
+}
+@media (max-width: 400px) {
+  .services_form--desc {
+    width: 90%;
+  }
 }
 .services_form--input {
   border-bottom: 1px solid var(--light-grey);
@@ -1338,11 +1460,6 @@ header nav .navbar__info .navbar_offerCall {
   font-size: 16px;
   line-height: 130%;
   color: var(--dark-grey);
-}
-@media (max-width: 600px) {
-  .services_form--select {
-    display: none;
-  }
 }
 .services_form--button {
   border-radius: 10px;
@@ -1642,6 +1759,16 @@ section.about {
   margin-top: 10px;
   margin-bottom: 50px;
   padding: 0 160px;
+}
+@media (max-width: 800px) {
+  .map {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 400px) {
+  .map {
+    padding: 0;
+  }
 }
 
 /*Footer*/
