@@ -66,6 +66,10 @@ header {
             align-items: center;
             margin-right: 30px;
 
+            h1 {
+                color: var(--black);
+            }
+
             @media (max-width: 400px) {
                 width: 40px;
                 height: 40px;
@@ -81,10 +85,10 @@ header {
             max-width: 100%;
 
             .active {
-                transform: translateX(43%);
+                transform: translateX(45%);
 
                 @media (max-width: 700px) {
-                    transform: translateX(10%);
+                    transform: translateX(8%);
                 }
             }
 
@@ -124,13 +128,54 @@ header {
                 z-index: 1;
                 bottom: 0;
                 color: var(--white);
-                align-items: center;
-                justify-content: center;
+                align-items: flex-end;
+                gap: 150px;
                 flex-direction: column;
-                font-size: clamp(30px, 1.5rem, 40px);
+                font-size: clamp(30px, 3rem, 40px);
                 padding: 0;
                 margin: 0;
                 top: 0;
+                padding: 30px;
+
+                @media (max-width: 700px) {
+                    gap: 60px;
+                }
+
+                @media (max-width: 500px) {
+                    font-size: 2rem;
+                    gap: 130px;
+                }
+
+                @media (max-width: 300px) {
+                    font-size: 1.5rem;
+                }
+
+                &__info {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    align-self: center;
+
+                    @media (max-width: 700px) {
+                        text-align: right;
+                        align-self: flex-end;
+                    }
+                }
+
+                &__header {
+                    display: flex;
+                    align-items: baseline;
+                    justify-content: space-between;
+                    width: 100%;
+                    margin-top: 10px;
+
+                    .logo {
+                        height: 100%;
+                        align-items: flex-start;
+                        justify-content: center;
+                        margin-right: 0;
+                    }
+                }
 
                 @media (max-width: 700px) {
                     width: 70vw;
@@ -138,10 +183,6 @@ header {
 
                 &_cross {
                     cursor: pointer;
-                    position: absolute;
-                    top: 0;
-                    right: 30px;
-                    margin: 10%;
                 }
 
                 li {
