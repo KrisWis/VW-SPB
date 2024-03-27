@@ -204,12 +204,13 @@ header nav .navbar__info .navbar_offerCall {
 @media (max-width: 1200px) {
   .main_screen__form_block {
     left: 150px;
+    top: 100px;
   }
 }
 @media (max-width: 800px) {
   .main_screen__form_block {
     left: 100px;
-    top: 40px;
+    top: 50px;
   }
 }
 
@@ -252,6 +253,21 @@ header nav .navbar__info .navbar_offerCall {
     -o-object-fit: contain;
        object-fit: contain;
     width: 320px;
+  }
+}
+@media (max-width: 530px) and (max-width: 370px) {
+  .main_screen_frame__2 {
+    right: 30px;
+  }
+}
+@media (max-width: 530px) and (max-width: 350px) {
+  .main_screen_frame__2 {
+    right: 10px;
+  }
+}
+@media (max-width: 530px) and (max-width: 300px) {
+  .main_screen_frame__2 {
+    right: -20px;
   }
 }
 
@@ -348,29 +364,56 @@ header nav .navbar__info .navbar_offerCall {
 }
 @media (max-width: 600px) and (max-width: 550px) {
   .main_screen__form_block {
-    width: 55%;
+    width: 60%;
   }
 }
-@media (max-width: 600px) and (max-width: 460px) {
+@media (max-width: 600px) and (max-width: 520px) {
   .main_screen__form_block {
-    left: 120px;
+    left: 150px;
+  }
+}
+@media (max-width: 600px) and (max-width: 480px) {
+  .main_screen__form_block {
+    left: 130px;
     width: 80%;
   }
 }
-@media (max-width: 600px) and (max-width: 420px) {
+@media (max-width: 600px) and (max-width: 440px) {
   .main_screen__form_block {
     left: 110px;
   }
 }
-@media (max-width: 600px) and (max-width: 380px) {
+@media (max-width: 600px) and (max-width: 400px) {
   .main_screen__form_block {
-    left: 90px;
+    left: 100px;
+  }
+}
+@media (max-width: 600px) and (max-width: 375px) {
+  .main_screen__form_block {
+    left: 85px;
+  }
+}
+@media (max-width: 600px) and (max-width: 365px) {
+  .main_screen__form_block {
+    left: 70px;
+  }
+}
+@media (max-width: 600px) and (max-width: 330px) {
+  .main_screen__form_block {
+    left: 60px;
   }
 }
 @media (max-width: 600px) {
   .main_screen_inputForm_caption {
     font-size: 32px;
   }
+}
+@media (max-width: 600px) and (max-width: 330px) {
+  .main_screen_inputForm_caption {
+    font-size: 24px;
+  }
+}
+@media (max-width: 600px) {
   .main_screen_inputForm_desc {
     line-height: 130%;
     font-weight: normal;
@@ -383,6 +426,11 @@ header nav .navbar__info .navbar_offerCall {
   .main_screen_inputForm_desc--adaptive {
     display: flex;
     flex-direction: column;
+  }
+}
+@media (max-width: 600px) and (max-width: 330px) {
+  .main_screen_inputForm_desc--adaptive {
+    font-size: 14px;
   }
 }
 
@@ -1307,7 +1355,7 @@ header nav .navbar__info .navbar_offerCall {
 }
 .details__item--caption {
   font-weight: 700;
-  font-size: 32px;
+  font-size: 40px;
   text-align: center;
   align-self: center;
 }
