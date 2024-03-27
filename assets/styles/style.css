@@ -1360,9 +1360,16 @@ header nav .navbar__info .navbar_offerCall {
 @media (max-width: 1000px) {
   .details__items {
     margin-left: 0;
-    margin-right: 0;
+    margin-right: 80px;
     margin-top: 50px;
   }
+}
+@media (max-width: 1000px) and (max-width: 800px) {
+  .details__items {
+    margin-right: 30px;
+  }
+}
+@media (max-width: 1000px) {
   .details__items .swiper-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1421,28 +1428,34 @@ header nav .navbar__info .navbar_offerCall {
 }
 @media (max-width: 1000px) {
   .details__item {
-    width: 80% !important;
-    height: 280px;
+    width: 100% !important;
+    height: 400px;
   }
 }
 @media (max-width: 1000px) and (max-width: 900px) {
   .details__item {
-    width: 95% !important;
+    width: 115% !important;
   }
 }
 @media (max-width: 1000px) and (max-width: 700px) {
   .details__item {
-    width: 110% !important;
+    width: 120% !important;
   }
 }
 @media (max-width: 1000px) and (max-width: 600px) {
   .details__item {
     width: 100% !important;
+    height: 300px;
+  }
+}
+@media (max-width: 1000px) and (max-width: 550px) {
+  .details__item {
+    height: 250px;
   }
 }
 @media (max-width: 1000px) and (max-width: 500px) {
   .details__item {
-    height: 250px;
+    height: 180px;
   }
 }
 @media (max-width: 1000px) and (max-width: 450px) {
@@ -1504,6 +1517,14 @@ header nav .navbar__info .navbar_offerCall {
   .details__item:nth-of-type(5) {
     grid-column: 2;
     grid-row: 2;
+  }
+  .details__item:nth-of-type(2) .details__item--img {
+    top: -40px;
+  }
+}
+@media (max-width: 1000px) and (max-width: 800px) {
+  .details__item:nth-of-type(2) .details__item--img {
+    top: 0px;
   }
 }
 @media (max-width: 1000px) and (max-width: 500px) {
