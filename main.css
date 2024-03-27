@@ -122,12 +122,19 @@ select:focus-visible {
 }
 
 .popup__background {
+    display: flex;
     position: fixed;
     min-width: 100vw;
     min-height: 100vh;
     background-color: #060637;
-    opacity: .6;
-    z-index: 1;
+    opacity: 0;
+    transition: all .3s linear;
+    z-index: -1;
+}
+
+.popup__background__active {
+    opacity: 0.6;
+    z-index: 3;
 }
 
 

@@ -21,10 +21,12 @@ const cars__popup__characteristics = document.getElementById("cars__popup__chara
 /* Открытие и закрытие бургер меню */
 navbar__adaptive_menuBurger.addEventListener("click", () => {
     navbar__adaptive_menu.classList.toggle("active");
+    popup__background.classList.add("popup__background__active");
 })
 
 navbar__adaptive_menu_cross.addEventListener("click", () => {
     navbar__adaptive_menu.classList.remove("active");
+    popup__background.classList.remove("popup__background__active");
 })
 
 /* Переключение табов в секции "cars" */
@@ -118,7 +120,7 @@ new Swiper('#details__items', {
 for (let car_model of cars__models) {
     car_model.addEventListener("click", () => {
 
-        popup__background.classList.add("popup__background");
+        popup__background.classList.add("popup__background__active");
         cars__popup.classList.add("cars__popup__active");
 
         cars__popup__title.textContent = car_model.getAttribute("data-title").split(" ").splice(0, 2).join(" ");
@@ -145,6 +147,6 @@ for (let car_model of cars__models) {
 
 /* Закрытие попапа */
 cars__popup__close.addEventListener("click", () => {
-    popup__background.classList.remove("popup__background");
+    popup__background.classList.remove("popup__background__active");
     cars__popup.classList.remove("cars__popup__active");
 })
