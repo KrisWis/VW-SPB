@@ -129,3 +129,23 @@ select:focus-visible {
     opacity: .6;
     z-index: 1;
 }
+
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.custom-select {
+    position: relative;
+}
+
+.custom-select::after {
+    content: url(./assets/images/other/select_menu_arrow.png);
+    display: block;
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    right: 0;
+    bottom: 25px;
+}

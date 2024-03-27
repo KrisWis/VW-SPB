@@ -575,23 +575,38 @@ header {
     height: 700px;
     order: 3;
 
-    .services_form--select {
+    .custom-select {
         margin-left: 140px;
         width: 15%;
         margin-top: 20px;
         margin-bottom: 20px;
-        font-size: 20px;
-        font-weight: 500;
-        color: var(--black);
+        width: 330px;
 
         @media (max-width: 1200px) {
             width: 30%;
+            margin-left: 35px;
+        }
+
+        @media (max-width: 800px) {
+            width: 70%;
         }
 
         @media (max-width: 600px) {
             width: 95%;
             margin-left: 10px;
             margin-right: 0;
+        }
+    }
+
+    .services_form--select {
+        width: 100%;
+        height: 100%;
+        font-weight: 500;
+        color: var(--black);
+        font-size: 24px;
+
+        @media (max-width: 1000px) {
+            font-size: 20px;
         }
     }
 
@@ -613,7 +628,7 @@ header {
     &--caption {
         text-align: center;
         font-weight: 700;
-        font-size: 40px;
+        font-size: 32px;
         margin-bottom: 30px;
     }
 
@@ -636,11 +651,16 @@ header {
         height: 70px;
         width: 20%;
         font-weight: 700;
-        font-size: 20px;
+        font-size: 24px;
         white-space: nowrap;
 
-        @media (max-width: 600px) {
-            width: 50%;
+        @media (max-width: 1000px) {
+            width: 40%;
+            font-size: 20px;
+        }
+
+        @media (max-width: 500px) {
+            width: 100%;
         }
     }
 
@@ -678,6 +698,10 @@ header {
         cursor: pointer;
 
         @media (max-width: 600px) {
+            width: 60% !important;
+        }
+
+        @media (max-width: 450px) {
             width: 80% !important;
         }
 
@@ -739,6 +763,8 @@ header {
             display: flex;
             align-items: center;
             gap: 10px;
+            font-size: 20px;
+            font-weight: 500;
 
             @extend %button--more;
 
@@ -756,6 +782,7 @@ header {
         margin-top: 50px;
         align-self: center;
         font-weight: 500;
+        font-size: 20px;
 
         @extend %blue_button;
         border-radius: 10px;
@@ -971,7 +998,7 @@ header {
 
     &--caption {
         font-weight: 900;
-        font-size: 40px;
+        font-size: 32px;
         text-align: center;
         left: 4%;
         position: relative;
