@@ -812,11 +812,12 @@ header {
         padding: 20px;
         width: 850px;
         min-height: 750px;
-        max-height: 875px;
+        max-height: 800px;
 
         @media (max-width: 1000px) {
             height: 100%;
             width: 90%;
+            margin-top: 10px;
         }
 
         &__active {
@@ -1059,7 +1060,8 @@ header {
         margin-top: 50px;
 
         @media (max-width: 1500px) {
-            grid-template-columns: 1.5fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            gap: 100px;
         }
 
         @media (max-width: 1200px) {
@@ -1074,20 +1076,24 @@ header {
         grid-template-rows: repeat(3, 1fr);
         column-gap: 20px;
 
-        @media (max-width: 1500px) and (min-width: 1200px) {
-            grid-template-columns: 1fr;
+        @media (max-width: 1200px) {
+            gap: 30px;
+            margin-left: 90px;
             gap: 20px;
             align-items: baseline;
             justify-content: baseline;
         }
 
-        @media (max-width: 1200px) and (min-width: 700px) {
-            gap: 30px;
-            margin-left: 150px;
+        @media (max-width: 700px) {
+            margin-left: 40px;
         }
 
         @media (max-width: 500px) {
             grid-template-columns: 1fr;
+        }
+
+        @media (max-width: 400px) {
+            margin-left: 0;
         }
 
         .service_type {
@@ -1131,6 +1137,10 @@ header {
                     flex-direction: row;
                     gap: 5px;
                 }
+
+                @media (max-width: 350px) {
+                    font-size: 16px;
+                }
             }
 
             &--more {
@@ -1139,8 +1149,9 @@ header {
                 &_wrapper {
                     display: flex;
                     align-items: center;
-                    gap: 5%;
+                    gap: 10px;
                     margin-top: 5%;
+
                 }
             }
         }
@@ -1666,6 +1677,8 @@ header {
         border-radius: 10px;
         height: 50px;
         margin-top: 10px;
+        font-size: 20px;
+        font-weight: bold;
     }
 }
 

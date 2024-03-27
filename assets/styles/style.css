@@ -795,12 +795,13 @@ header nav .navbar__info .navbar_offerCall {
   padding: 20px;
   width: 850px;
   min-height: 750px;
-  max-height: 875px;
+  max-height: 800px;
 }
 @media (max-width: 1000px) {
   .cars__popup {
     height: 100%;
     width: 90%;
+    margin-top: 10px;
   }
 }
 .cars__popup__active {
@@ -1041,7 +1042,8 @@ header nav .navbar__info .navbar_offerCall {
 }
 @media (max-width: 1500px) {
   .services_wrapper {
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
   }
 }
 @media (max-width: 1200px) {
@@ -1057,23 +1059,28 @@ header nav .navbar__info .navbar_offerCall {
   -moz-column-gap: 20px;
        column-gap: 20px;
 }
-@media (max-width: 1500px) and (min-width: 1200px) {
+@media (max-width: 1200px) {
   .services_types {
-    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-left: 90px;
     gap: 20px;
     align-items: baseline;
     justify-content: baseline;
   }
 }
-@media (max-width: 1200px) and (min-width: 700px) {
+@media (max-width: 700px) {
   .services_types {
-    gap: 30px;
-    margin-left: 150px;
+    margin-left: 40px;
   }
 }
 @media (max-width: 500px) {
   .services_types {
     grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 400px) {
+  .services_types {
+    margin-left: 0;
   }
 }
 .services_types .service_type {
@@ -1119,10 +1126,15 @@ header nav .navbar__info .navbar_offerCall {
     gap: 5px;
   }
 }
+@media (max-width: 350px) {
+  .services_types .service_type--caption {
+    font-size: 16px;
+  }
+}
 .services_types .service_type--more_wrapper {
   display: flex;
   align-items: center;
-  gap: 5%;
+  gap: 10px;
   margin-top: 5%;
 }
 .services_images {
@@ -1637,6 +1649,8 @@ header nav .navbar__info .navbar_offerCall {
   border-radius: 10px;
   height: 50px;
   margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 /*Osago*/
