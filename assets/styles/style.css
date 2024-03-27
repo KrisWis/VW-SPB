@@ -1540,7 +1540,7 @@ header nav .navbar__info .navbar_offerCall {
 }
 @media (max-width: 1000px) and (max-width: 450px) {
   .details__item:nth-of-type(4) .details__item--img {
-    bottom: 70px;
+    bottom: 60px;
   }
 }
 @media (max-width: 1000px) and (max-width: 1000px) {
@@ -1570,17 +1570,22 @@ header nav .navbar__info .navbar_offerCall {
 @media (max-width: 1000px) and (max-width: 500px) {
   .details__item:nth-of-type(2) .details__item--img {
     top: 15px;
+    width: 115%;
   }
   .details__item:nth-of-type(5) .details__item--img {
-    top: 30px;
+    width: 130%;
+    right: 25px;
   }
 }
 @media (max-width: 1000px) and (max-width: 370px) {
   .details__item:nth-of-type(2) .details__item--img {
     top: -10px;
+    width: 120%;
   }
   .details__item:nth-of-type(5) .details__item--img {
-    top: 10px;
+    width: 125%;
+    top: -20px;
+    right: 10px;
   }
 }
 @media (max-width: 1000px) and (max-width: 500px) {

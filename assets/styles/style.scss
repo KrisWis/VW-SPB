@@ -1541,7 +1541,7 @@ header {
                     }
 
                     @media (max-width: 450px) {
-                        bottom: 70px;
+                        bottom: 60px;
                     }
                 }
             }
@@ -1590,12 +1590,14 @@ header {
                 &:nth-of-type(2) {
                     .details__item--img {
                         top: 15px;
+                        width: 115%;
                     }
                 }
 
                 &:nth-of-type(5) {
                     .details__item--img {
-                        top: 30px;
+                        width: 130%;
+                        right: 25px;
                     }
                 }
             }
@@ -1605,12 +1607,15 @@ header {
                 &:nth-of-type(2) {
                     .details__item--img {
                         top: -10px;
+                        width: 120%;
                     }
                 }
 
                 &:nth-of-type(5) {
                     .details__item--img {
-                        top: 10px;
+                        width: 125%;
+                        top: -20px;
+                        right: 10px;
                     }
                 }
             }
