@@ -117,7 +117,7 @@ header nav .navbar__adaptive_menu {
   transition: transform 0.5s ease-in-out;
   position: fixed;
   background-color: var(--black);
-  z-index: 1;
+  z-index: 2;
   bottom: 0;
   color: var(--white);
   align-items: flex-end;
@@ -1293,7 +1293,6 @@ header nav .navbar__info .navbar_offerCall {
 .details {
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
   color: var(--black);
   order: 7;
 }
@@ -1350,9 +1349,9 @@ header nav .navbar__info .navbar_offerCall {
   margin-right: 150px;
 }
 .details__items .swiper-wrapper {
-  gap: 70px;
+  gap: 30px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1500px) {
   .details__items {
     margin-right: 50px;
     margin-left: 50px;
@@ -1508,9 +1507,6 @@ header nav .navbar__info .navbar_offerCall {
   }
 }
 @media (max-width: 1000px) and (max-width: 500px) {
-  .details__item:nth-of-type(2) .details__item--img {
-    bottom: 20px;
-  }
   .details__item:nth-of-type(2) .details__item--caption, .details__item:nth-of-type(1) .details__item--caption {
     position: relative;
     top: 10px;

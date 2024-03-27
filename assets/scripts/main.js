@@ -98,7 +98,7 @@ new Swiper('#details__items', {
             slidesPerView: 3,
         },
 
-        600: {
+        100: {
             slidesPerView: 2,
         },
 
