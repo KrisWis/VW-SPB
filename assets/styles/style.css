@@ -552,6 +552,12 @@ header nav .navbar__info .navbar_offerCall {
     bottom: 0;
   }
 }
+@media (max-width: 500px) {
+  .navigation__item--image {
+    right: 0px;
+    width: 100%;
+  }
+}
 @media (max-width: 400px) {
   .navigation__item--image {
     right: 10px;
@@ -575,6 +581,7 @@ header nav .navbar__info .navbar_offerCall {
   margin-top: 20px;
   margin-bottom: 20px;
   width: 330px;
+  height: 37px;
 }
 @media (max-width: 1200px) {
   .cars .custom-select {
@@ -775,7 +782,7 @@ header nav .navbar__info .navbar_offerCall {
     width: 50%;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .cars__to_catalog {
     width: 100%;
     height: 70px;
@@ -1243,6 +1250,11 @@ header nav .navbar__info .navbar_offerCall {
   color: var(--black);
   order: 7;
 }
+@media (max-width: 600px) {
+  .details {
+    padding: 10px;
+  }
+}
 .details_catalog_button {
   width: 300px;
   align-self: center;
@@ -1265,13 +1277,13 @@ header nav .navbar__info .navbar_offerCall {
     height: 50px;
     font-size: 20px;
     font-weight: 500;
+    position: relative;
+    bottom: 70px;
   }
 }
 @media (max-width: 400px) {
   .details_catalog_button {
     width: 95%;
-    position: relative;
-    bottom: 70px;
   }
 }
 .details .swiper-button-lock {
@@ -1395,13 +1407,13 @@ header nav .navbar__info .navbar_offerCall {
 @media (max-width: 1000px) and (max-width: 400px) {
   .details__item {
     width: 100% !important;
-    height: 200px;
+    height: 130px;
   }
 }
 @media (max-width: 1000px) and (max-width: 370px) {
   .details__item {
     width: 90% !important;
-    height: 170px;
+    height: 120px;
   }
 }
 @media (max-width: 1000px) {
@@ -1542,7 +1554,7 @@ header nav .navbar__info .navbar_offerCall {
 }
 @media (max-width: 500px) {
   .online_services__servicesForm {
-    padding: 3px;
+    padding: 10px;
   }
 }
 .online_services_wrapper {
@@ -1571,6 +1583,11 @@ header nav .navbar__info .navbar_offerCall {
   text-align: center;
   color: var(--black);
   margin: 50px 0;
+}
+@media (max-width: 500px) {
+  .online_services--caption {
+    margin: 10px 0;
+  }
 }
 .online_services .online_service {
   display: flex;
