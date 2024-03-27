@@ -97,7 +97,7 @@ header {
                 gap: 10px;
                 width: 100%;
 
-                @media (max-width: 1600px) {
+                @media (max-width: 1200px) {
                     flex-direction: column;
                 }
             }
@@ -1387,6 +1387,11 @@ header {
             margin-left: 50px;
         }
 
+        @media (max-width: 1200px) {
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+
         @media (max-width: 1000px) {
             margin-left: 0;
             margin-right: 80px;
@@ -1408,12 +1413,12 @@ header {
                 }
 
                 @media (max-width: 600px) {
-                    right: 70px;
+                    right: 40px;
                     gap: 40px;
                 }
 
                 @media (max-width: 500px) {
-                    right: 55px;
+                    right: 35px;
                     gap: 30px;
                 }
 
@@ -1459,11 +1464,15 @@ header {
 
             @media (max-width: 700px) {
                 width: 120% !important;
+                height: 350px;
             }
 
             @media (max-width: 650px) {
-                width: 100% !important;
                 height: 250px;
+            }
+
+            @media (max-width: 600px) {
+                width: 100% !important;
             }
 
             @media (max-width: 550px) {
