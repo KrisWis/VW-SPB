@@ -1244,13 +1244,15 @@ header nav .navbar__info .navbar_offerCall {
   order: 7;
 }
 .details_catalog_button {
-  width: 14%;
+  width: 300px;
   align-self: center;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1;
   border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
 }
 @media (max-width: 1300px) {
   .details_catalog_button {
@@ -1272,6 +1274,9 @@ header nav .navbar__info .navbar_offerCall {
     bottom: 70px;
   }
 }
+.details .swiper-button-lock {
+  display: block;
+}
 .details .h3_arrows--arrows {
   left: 30%;
 }
@@ -1286,7 +1291,7 @@ header nav .navbar__info .navbar_offerCall {
   margin-right: 150px;
 }
 .details__items .swiper-wrapper {
-  gap: 20px;
+  gap: 70px;
 }
 @media (max-width: 1200px) {
   .details__items {
@@ -1316,11 +1321,32 @@ header nav .navbar__info .navbar_offerCall {
 @media (max-width: 1000px) and (max-width: 600px) {
   .details__items .swiper-wrapper {
     right: 70px;
+    gap: 40px;
   }
 }
 @media (max-width: 1000px) and (max-width: 500px) {
   .details__items .swiper-wrapper {
-    right: 50px;
+    right: 60px;
+    gap: 30px;
+  }
+}
+@media (max-width: 1000px) and (max-width: 370px) {
+  .details__items .swiper-wrapper {
+    right: 40px;
+    gap: 5px;
+  }
+}
+@media (max-width: 500px) {
+  .details__items {
+    margin-top: 10px;
+  }
+}
+.details .h3_arrows--caption {
+  font-size: 40px;
+}
+@media (max-width: 1000px) {
+  .details .h3_arrows--caption {
+    font-size: 32px;
   }
 }
 .details__item {
@@ -1341,22 +1367,41 @@ header nav .navbar__info .navbar_offerCall {
     height: 280px;
   }
 }
-@media (max-width: 1000px) and (max-width: 800px) {
+@media (max-width: 1000px) and (max-width: 900px) {
   .details__item {
     width: 95% !important;
   }
 }
+@media (max-width: 1000px) and (max-width: 700px) {
+  .details__item {
+    width: 110% !important;
+  }
+}
+@media (max-width: 1000px) and (max-width: 600px) {
+  .details__item {
+    width: 100% !important;
+  }
+}
 @media (max-width: 1000px) and (max-width: 500px) {
   .details__item {
-    width: 95% !important;
-    height: 275px;
-    margin-bottom: 0;
+    height: 250px;
+  }
+}
+@media (max-width: 1000px) and (max-width: 450px) {
+  .details__item {
+    height: 150px;
   }
 }
 @media (max-width: 1000px) and (max-width: 400px) {
   .details__item {
     width: 100% !important;
-    height: 250px;
+    height: 200px;
+  }
+}
+@media (max-width: 1000px) and (max-width: 370px) {
+  .details__item {
+    width: 90% !important;
+    height: 170px;
   }
 }
 @media (max-width: 1000px) {
@@ -1392,26 +1437,37 @@ header nav .navbar__info .navbar_offerCall {
     width: 115%;
   }
 }
+@media (max-width: 1000px) and (max-width: 1000px) {
+  .details__item:nth-of-type(5) .details__item--img, .details__item:nth-of-type(1) .details__item--img, .details__item:nth-of-type(2) .details__item--img {
+    display: none;
+  }
+}
 @media (max-width: 1000px) {
   .details__item:nth-of-type(5) {
     grid-column: 2;
     grid-row: 2;
   }
 }
-@media (max-width: 1000px) and (max-width: 1000px) {
-  .details__item:nth-of-type(5) .details__item--img {
-    display: none;
+@media (max-width: 1000px) and (max-width: 500px) {
+  .details__item:nth-of-type(2) .details__item--img {
+    bottom: 25px;
+  }
+  .details__item:nth-of-type(2) .details__item--caption, .details__item:nth-of-type(1) .details__item--caption {
+    position: relative;
+    top: 10px;
   }
 }
 .details__item--caption {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 32px;
   text-align: center;
   align-self: center;
+  font-weight: bold;
 }
-@media (max-width: 1000px) {
+@media (max-width: 500px) {
   .details__item--caption {
-    font-size: 24px;
+    font-size: 20px;
+    margin-left: 20px;
   }
 }
 .details__item--img {
@@ -1423,6 +1479,7 @@ header nav .navbar__info .navbar_offerCall {
 }
 .details__item--img__2 {
   display: none;
+  width: 85%;
 }
 @media (max-width: 1000px) {
   .details__item--img__2 {
@@ -1491,11 +1548,6 @@ header nav .navbar__info .navbar_offerCall {
 @media (max-width: 800px) {
   .online_services_wrapper {
     grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 400px) {
-  .online_services_wrapper {
-    grid-template-columns: repeat(2, 165px);
   }
 }
 @media (max-width: 360px) {

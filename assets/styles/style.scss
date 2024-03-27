@@ -1278,13 +1278,15 @@ header {
 
     &_catalog_button {
         @extend %blue_button;
-        width: 14%;
+        width: 300px;
         align-self: center;
         display: flex;
         align-items: center;
         justify-content: center;
         z-index: 1;
         border-radius: 10px;
+        font-size: 20px;
+        font-weight: bold;
 
         @media (max-width: 1300px) {
             width: 30%;
@@ -1304,6 +1306,10 @@ header {
         }
     }
 
+    .swiper-button-lock {
+        display: block;
+    }
+
     .h3_arrows--arrows {
         left: 30%;
 
@@ -1318,7 +1324,7 @@ header {
         margin-right: 150px;
 
         .swiper-wrapper {
-            gap: 20px;
+            gap: 70px;
         }
 
         @media (max-width: 1200px) {
@@ -1344,12 +1350,31 @@ header {
 
                 @media (max-width: 600px) {
                     right: 70px;
+                    gap: 40px;
                 }
 
                 @media (max-width: 500px) {
-                    right: 50px;
+                    right: 60px;
+                    gap: 30px;
+                }
+
+                @media (max-width: 370px) {
+                    right: 40px;
+                    gap: 5px;
                 }
             }
+        }
+
+        @media (max-width: 500px) {
+            margin-top: 10px;
+        }
+    }
+
+    .h3_arrows--caption {
+        font-size: 40px;
+
+        @media (max-width: 1000px) {
+            font-size: 32px;
         }
     }
 
@@ -1369,19 +1394,34 @@ header {
             width: 80% !important;
             height: 280px;
 
-            @media (max-width: 800px) {
+            @media (max-width: 900px) {
                 width: 95% !important;
             }
 
+            @media (max-width: 700px) {
+                width: 110% !important;
+            }
+
+            @media (max-width: 600px) {
+                width: 100% !important;
+            }
+
             @media (max-width: 500px) {
-                width: 95% !important;
-                height: 275px;
-                margin-bottom: 0;
+                height: 250px;
+            }
+
+            @media (max-width: 450px) {
+                height: 150px;
             }
 
             @media (max-width: 400px) {
                 width: 100% !important;
-                height: 250px;
+                height: 200px;
+            }
+
+            @media (max-width: 370px) {
+                width: 90% !important;
+                height: 170px;
             }
 
 
@@ -1415,13 +1455,33 @@ header {
                 }
             }
 
-            &:nth-of-type(5) {
-                grid-column: 2;
-                grid-row: 2;
-
+            &:nth-of-type(5),
+            &:nth-of-type(1),
+            &:nth-of-type(2) {
                 .details__item--img {
                     @media (max-width: 1000px) {
                         display: none;
+                    }
+                }
+            }
+
+            &:nth-of-type(5) {
+                grid-column: 2;
+                grid-row: 2;
+            }
+
+            @media (max-width: 500px) {
+                &:nth-of-type(2) {
+                    .details__item--img {
+                        bottom: 25px;
+                    }
+                }
+
+                &:nth-of-type(2),
+                &:nth-of-type(1) {
+                    .details__item--caption {
+                        position: relative;
+                        top: 10px;
                     }
                 }
             }
@@ -1429,12 +1489,14 @@ header {
 
         &--caption {
             font-weight: 700;
-            font-size: 40px;
+            font-size: 32px;
             text-align: center;
             align-self: center;
+            font-weight: bold;
 
-            @media (max-width: 1000px) {
-                font-size: 24px;
+            @media (max-width: 500px) {
+                font-size: 20px;
+                margin-left: 20px;
             }
         }
 
@@ -1446,6 +1508,7 @@ header {
 
             &__2 {
                 display: none;
+                width: 85%;
             }
 
             @media (max-width: 1000px) {
@@ -1516,10 +1579,6 @@ header {
 
         @media (max-width: 800px) {
             grid-template-columns: repeat(2, 1fr);
-        }
-
-        @media (max-width: 400px) {
-            grid-template-columns: repeat(2, 165px);
         }
 
         @media (max-width: 360px) {
