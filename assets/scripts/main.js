@@ -91,12 +91,12 @@ new Swiper('#details__items', {
             slidesPerView: 5,
         },
 
-        1100: {
+        800: {
             slidesPerView: 4,
             allowTouchMove: false
         },
 
-        800: {
+        500: {
             slidesPerView: 3,
         },
 
