@@ -155,6 +155,7 @@ header nav .navbar__adaptive_menu__info {
   header nav .navbar__adaptive_menu__info {
     text-align: right;
     align-self: flex-end;
+    padding-right: 10px;
   }
 }
 header nav .navbar__adaptive_menu__header {
@@ -1383,21 +1384,31 @@ header nav .navbar__info .navbar_offerCall {
     transform: none !important;
   }
 }
-@media (max-width: 1000px) and (max-width: 800px) {
+@media (max-width: 1000px) and (max-width: 900px) {
   .details__items .swiper-wrapper {
     position: relative;
-    right: 50px;
+    right: -15px;
+  }
+}
+@media (max-width: 1000px) and (max-width: 800px) {
+  .details__items .swiper-wrapper {
+    right: 13px;
+  }
+}
+@media (max-width: 1000px) and (max-width: 700px) {
+  .details__items .swiper-wrapper {
+    right: 25px;
   }
 }
 @media (max-width: 1000px) and (max-width: 600px) {
   .details__items .swiper-wrapper {
-    right: 40px;
+    right: 30px;
     gap: 40px;
   }
 }
 @media (max-width: 1000px) and (max-width: 500px) {
   .details__items .swiper-wrapper {
-    right: 35px;
+    right: 30px;
     gap: 30px;
   }
 }

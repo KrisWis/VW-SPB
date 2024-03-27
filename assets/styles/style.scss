@@ -159,6 +159,7 @@ header {
                     @media (max-width: 700px) {
                         text-align: right;
                         align-self: flex-end;
+                        padding-right: 10px;
                     }
                 }
 
@@ -1407,18 +1408,26 @@ header {
                 padding: 30px;
                 transform: none !important;
 
-                @media (max-width: 800px) {
+                @media (max-width: 900px) {
                     position: relative;
-                    right: 50px;
+                    right: -15px;
+                }
+
+                @media (max-width: 800px) {
+                    right: 13px;
+                }
+
+                @media (max-width: 700px) {
+                    right: 25px;
                 }
 
                 @media (max-width: 600px) {
-                    right: 40px;
+                    right: 30px;
                     gap: 40px;
                 }
 
                 @media (max-width: 500px) {
-                    right: 35px;
+                    right: 30px;
                     gap: 30px;
                 }
 
