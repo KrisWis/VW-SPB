@@ -1331,6 +1331,7 @@ header nav .navbar__info .navbar_offerCall {
 @media (max-width: 400px) {
   .details_catalog_button {
     width: 95%;
+    bottom: 150px;
   }
 }
 .details .swiper-button-lock {
