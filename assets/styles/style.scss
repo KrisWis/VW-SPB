@@ -1407,6 +1407,7 @@ header {
                 grid-template-columns: repeat(2, 1fr);
                 padding: 30px;
                 transform: none !important;
+                right: -10px;
 
                 @media (max-width: 900px) {
                     position: relative;
@@ -1414,25 +1415,29 @@ header {
                 }
 
                 @media (max-width: 800px) {
-                    right: 13px;
+                    right: 10px;
                 }
 
                 @media (max-width: 700px) {
-                    right: 25px;
+                    right: 20px;
+                }
+
+                @media (max-width: 650px) {
+                    right: 15px;
                 }
 
                 @media (max-width: 600px) {
-                    right: 40px;
+                    right: 30px;
                     gap: 40px;
                 }
 
                 @media (max-width: 500px) {
-                    right: 45px;
+                    right: 25px;
                     gap: 30px;
                 }
 
                 @media (max-width: 370px) {
-                    right: 25px;
+                    right: 10px;
                     gap: 5px;
                 }
             }
@@ -1510,6 +1515,10 @@ header {
                 width: 100% !important;
                 height: 400px;
 
+                @media (max-width: 450px) {
+                    margin-bottom: 0;
+                }
+
                 .details__item--img {
                     align-self: center;
                     height: 100%;
@@ -1529,6 +1538,10 @@ header {
 
                     @media (max-width: 600px) {
                         width: 115%;
+                    }
+
+                    @media (max-width: 450px) {
+                        bottom: 70px;
                     }
                 }
             }
