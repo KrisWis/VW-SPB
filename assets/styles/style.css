@@ -1431,7 +1431,7 @@ header nav .navbar__info .navbar_offerCall {
 }
 @media (max-width: 1000px) and (max-width: 370px) {
   .details__items .swiper-wrapper {
-    right: 20px;
+    right: 15px;
     gap: 5px;
   }
 }
