@@ -1317,7 +1317,7 @@ header nav .navbar__info .navbar_offerCall {
   border-radius: 10px;
   font-size: 20px;
   font-weight: bold;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 @media (max-width: 1300px) {
   .details_catalog_button {
@@ -1391,8 +1391,8 @@ header nav .navbar__info .navbar_offerCall {
 }
 @media (max-width: 1000px) and (max-width: 400px) {
   .details__items--adaptive {
-    padding: 10px;
-    gap: 15px;
+    padding: 0px;
+    gap: 0px;
   }
 }
 @media (max-width: 1000px) {
@@ -1414,14 +1414,16 @@ header nav .navbar__info .navbar_offerCall {
     top: 20px;
   }
 }
+@media (max-width: 1000px) and (max-width: 500px) {
+  .details__items--adaptive .details__item--adaptive .details__item--caption--adaptive {
+    font-size: 1.25rem;
+  }
+}
 @media (max-width: 1000px) and (max-width: 400px) {
   .details__items--adaptive .details__item--adaptive {
     width: 165px;
     height: 200px;
     overflow: hidden;
-  }
-  .details__items--adaptive .details__item--adaptive .details__item--caption--adaptive {
-    font-size: 1.25rem;
   }
 }
 @media (max-width: 1000px) {
