@@ -1211,13 +1211,16 @@ header nav .navbar__info .navbar_offerCall {
   height: 360px;
   width: 100%;
   color: var(--black);
+  
 }
 .services .service_image--header {
+  height: 60%;
   position: relative;
 }
 .services .service_image--img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 .services .service_image--service {
   position: absolute;
@@ -1227,7 +1230,6 @@ header nav .navbar__info .navbar_offerCall {
   background: var(--dark-grey);
   padding: 5px;
   color: var(--white);
-  width: 77px;
   height: 36px;
   cursor: pointer;
   text-align: center;
@@ -1913,12 +1915,6 @@ section.osago {
   flex-direction: column;
   gap: 10px;
   flex: 1;
-}
-
-.osago-container-second-item {
-  flex: 1;
-  background-image: url(../images/other/osago.png);
-  border-radius: 10px;
 }
 
 .osago-btns-wrapper-top {
