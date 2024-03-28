@@ -85,10 +85,10 @@ header {
             max-width: 100%;
 
             .active {
-                transform: translateX(45%);
+                transform: translateX(35%);
 
                 @media (max-width: 700px) {
-                    transform: translateX(8%);
+                    transform: translateX(5%);
                 }
             }
 
@@ -157,9 +157,9 @@ header {
                     align-self: center;
 
                     @media (max-width: 700px) {
-                        text-align: right;
-                        align-self: flex-end;
+                        align-items: flex-end;
                         padding-right: 10px;
+                        align-self: flex-end;
                     }
 
                     li {

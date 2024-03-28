@@ -79,11 +79,11 @@ header nav .navbar {
   max-width: 100%;
 }
 header nav .navbar .active {
-  transform: translateX(45%);
+  transform: translateX(35%);
 }
 @media (max-width: 700px) {
   header nav .navbar .active {
-    transform: translateX(8%);
+    transform: translateX(5%);
   }
 }
 header nav .navbar_phone {
@@ -153,9 +153,9 @@ header nav .navbar__adaptive_menu__info {
 }
 @media (max-width: 700px) {
   header nav .navbar__adaptive_menu__info {
-    text-align: right;
-    align-self: flex-end;
+    align-items: flex-end;
     padding-right: 10px;
+    align-self: flex-end;
   }
 }
 header nav .navbar__adaptive_menu__info li {
