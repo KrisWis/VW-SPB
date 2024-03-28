@@ -993,6 +993,7 @@ header nav .navbar__info .navbar_offerCall {
 @media (max-width: 700px) {
   .cars__popup--buttons {
     padding: 0 30px;
+    gap: 10px;
   }
 }
 @media (max-width: 400px) {
@@ -1424,7 +1425,7 @@ header nav .navbar__info .navbar_offerCall {
 }
 @media (max-width: 1000px) and (max-width: 500px) {
   .details__items .swiper-wrapper {
-    right: 35px;
+    right: 30px;
     gap: 30px;
   }
 }
