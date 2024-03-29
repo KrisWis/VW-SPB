@@ -267,11 +267,9 @@ header {
     }
 
     @media (max-width: 700px) {
-        width: 90%;
-    }
-
-    @media (max-width: 550px) {
         width: 100%;
+        top: 40px;
+        right: 15px;
     }
 
     &_block {
@@ -293,12 +291,11 @@ header {
         }
 
         @media (max-width: 430px) {
-            top: -5px;
             left: 110px;
+            top: -65px;
         }
 
         @media (max-width: 390px) {
-            top: -20px;
             left: 80px;
         }
 
@@ -339,7 +336,7 @@ header {
     }
 
     @media (max-width: 700px) {
-        width: 100%;
+        width: 90%;
     }
 
     @media (max-width: 600px) {
@@ -354,8 +351,8 @@ header {
 
             @media (max-width: 430px) {
                 width: 360px;
-                bottom: 74px;
-                height: 83%;
+                bottom: 120px;
+                height: 80%;
             }
 
             // @media (max-width: 530px) {
@@ -393,6 +390,10 @@ header {
     flex-direction: column;
     gap: 20px;
     height: 400px;
+
+    @media (max-width: 390px) {
+        gap: 5px;
+    }
 
     &_caption {
         font-weight: 700;

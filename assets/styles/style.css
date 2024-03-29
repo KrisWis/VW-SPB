@@ -252,12 +252,9 @@ header nav .navbar__info .navbar_offerCall {
 }
 @media (max-width: 700px) {
   .main_screen__form {
-    width: 90%;
-  }
-}
-@media (max-width: 550px) {
-  .main_screen__form {
     width: 100%;
+    top: 40px;
+    right: 15px;
   }
 }
 .main_screen__form_block {
@@ -282,13 +279,12 @@ header nav .navbar__info .navbar_offerCall {
 }
 @media (max-width: 430px) {
   .main_screen__form_block {
-    top: -5px;
     left: 110px;
+    top: -65px;
   }
 }
 @media (max-width: 390px) {
   .main_screen__form_block {
-    top: -20px;
     left: 80px;
   }
 }
@@ -320,7 +316,7 @@ header nav .navbar__info .navbar_offerCall {
 }
 @media (max-width: 700px) {
   .main_screen_frame {
-    width: 100%;
+    width: 90%;
   }
 }
 @media (max-width: 600px) {
@@ -339,8 +335,8 @@ header nav .navbar__info .navbar_offerCall {
 @media (max-width: 600px) and (max-width: 430px) {
   .main_screen_frame__2 {
     width: 360px;
-    bottom: 74px;
-    height: 83%;
+    bottom: 120px;
+    height: 80%;
   }
 }
 
@@ -349,6 +345,11 @@ header nav .navbar__info .navbar_offerCall {
   flex-direction: column;
   gap: 20px;
   height: 400px;
+}
+@media (max-width: 390px) {
+  .main_screen_inputForm {
+    gap: 5px;
+  }
 }
 .main_screen_inputForm_caption {
   font-weight: 700;
