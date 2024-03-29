@@ -253,68 +253,93 @@ header {
 /* Main screen */
 .main_screen__form {
     display: flex;
-    align-items: center;
-    justify-content: center;
     position: relative;
-    width: 100%;
-    order: 1;
+    width: 1250px;
+    margin: 0 auto;
+    padding-top: 70px;
+
+    @media (max-width: 1300px) {
+        width: 900px;
+    }
+
+    @media (max-width: 950px) {
+        width: 700px;
+    }
+
+    @media (max-width: 700px) {
+        width: 90%;
+    }
 
     &_block {
         display: flex;
-        align-items: center;
-        position: absolute;
         gap: 20px;
-        width: 100%;
-        left: 400px;
-        top: 100px;
+        position: relative;
+        left: 120px;
+        top: 40px;
 
-        @media (max-width: 1200px) {
-            left: 150px;
-            top: 100px;
+        @media (max-width: 650px) {
+            left: 50px;
+            top: 10px;
         }
 
-        @media (max-width: 800px) {
-            left: 100px;
-            top: 50px;
+        @media (max-width: 550px) {
+            left: 65px;
+            top: 20px;
         }
+
+        @media (max-width: 400px) {
+            top: -15px;
+            margin: 0;
+        }
+
+        // @media (max-width: 1200px) {
+        //     left: 230px;
+        //     top: 100px;
+        // }
+
+        // @media (max-width: 800px) {
+        //     left: 100px;
+        //     top: 50px;
+        // }
 
     }
 }
 
 .main_screen_frame {
-    position: absolute;
-    width: 70%;
-    height: 90%;
+    width: 100%;
     object-fit: contain;
+    position: absolute;
+    left: 0;
 
     &__2 {
         display: none;
     }
 
-    @media (max-width: 1700px) {
-        width: 80%;
+    @media (max-width: 1300px) {
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
     }
 
-    @media (max-width: 1400px) {
-        width: 95%;
+    @media (max-width: 950px) {
+        width: 700px;
     }
 
     @media (max-width: 700px) {
-        height: 75%;
-        bottom: 75px;
+        width: 100%;
     }
 
-    @media (max-width: 530px) {
-        height: 65%;
-        bottom: 120px;
+    @media (max-width: 400px) {
         display: none;
 
         &__2 {
             display: block;
-            height: 380px;
-            bottom: 5px;
             object-fit: contain;
             width: 320px;
+            bottom: 80px;
 
             // @media (max-width: 530px) {
             //     right: 90px;
@@ -331,17 +356,17 @@ header {
             //     width: 80%;
             // }
 
-            @media (max-width: 370px) {
-                right: 30px;
-            }
+            // @media (max-width: 370px) {
+            //     right: 30px;
+            // }
 
-            @media (max-width: 350px) {
-                right: 10px;
-            }
+            // @media (max-width: 350px) {
+            //     right: 10px;
+            // }
 
-            @media (max-width: 300px) {
-                right: -20px;
-            }
+            // @media (max-width: 300px) {
+            //     right: -20px;
+            // }
         }
     }
 }
@@ -354,29 +379,29 @@ header {
 
     &_caption {
         font-weight: 700;
-        font-size: clamp(20px, 4vw, 48px);
+        font-size: 48px;
         line-height: 130%;
         text-align: left;
 
-        @media (max-width: 1200px) {
-            font-size: clamp(20px, 6vw, 60px);
+        @media (max-width: 550px) {
+            font-size: 32px;
         }
     }
 
     &_desc {
         display: flex;
         flex-direction: column;
-        font-size: clamp(10px, 3vw, 24px);
+        font-size: 24px;
         line-height: 130%;
         text-align: left;
         white-space: wrap;
 
-        &--adaptive {
-            display: none;
+        @media (max-width: 550px) {
+            font-size: 16px;
         }
 
-        @media (max-width: 1200px) {
-            font-size: clamp(10px, 3vw, 60px);
+        &--adaptive {
+            display: none;
         }
     }
 
@@ -409,63 +434,66 @@ header {
     }
 }
 
-.main_screen_formImage {
-    width: 150%;
-    height: 150%;
-    object-fit: cover;
-}
+// .main_screen_formImage {
+//     width: 150%;
+//     height: 150%;
+//     object-fit: cover;
+// }
 
 .main_screen {
-    @media (max-width: 600px) {
+    max-width: 100%;
+    background-image: url(../images/other/main_screen_bg.png);
+    height: 800px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+
+    @media (max-width: 400px) {
         height: 400px;
 
-        &_formImage {
-            height: 400px;
-        }
+        // &_formImage {
+        //     height: 400px;
+        // }
 
-        &__form_block {
-            left: 70px;
-            text-align: center;
-            padding-left: 20em;
 
-            @media (max-width: 600px) {
-                left: 170px;
-                padding-left: 0;
-            }
+        // @media (max-width: 600px) {
+        //     left: 170px;
+        //     padding-left: 0;
+        // }
 
-            @media (max-width: 550px) {
-                width: 60%;
-            }
+        // @media (max-width: 550px) {
+        //     width: 60%;
+        // }
 
-            @media (max-width: 520px) {
-                left: 150px;
-            }
+        // @media (max-width: 520px) {
+        //     left: 150px;
+        // }
 
-            @media (max-width: 480px) {
-                left: 130px;
-                width: 80%;
-            }
+        // @media (max-width: 480px) {
+        //     left: 130px;
+        //     width: 80%;
+        // }
 
-            @media (max-width: 440px) {
-                left: 110px;
-            }
+        // @media (max-width: 440px) {
+        //     left: 110px;
+        // }
 
-            @media (max-width: 400px) {
-                left: 100px;
-            }
+        // @media (max-width: 400px) {
+        //     left: 100px;
+        // }
 
-            @media (max-width: 375px) {
-                left: 85px;
-            }
+        // @media (max-width: 375px) {
+        //     left: 85px;
+        // }
 
-            @media (max-width: 365px) {
-                left: 70px;
-            }
+        // @media (max-width: 365px) {
+        //     left: 70px;
+        // }
 
-            @media (max-width: 330px) {
-                left: 60px;
-            }
-        }
+        // @media (max-width: 330px) {
+        //     left: 60px;
+        // }
 
         &_inputForm {
             &_caption {
