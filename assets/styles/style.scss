@@ -270,6 +270,10 @@ header {
         width: 90%;
     }
 
+    @media (max-width: 550px) {
+        width: 100%;
+    }
+
     &_block {
         display: flex;
         gap: 20px;
@@ -278,18 +282,24 @@ header {
         top: 40px;
 
         @media (max-width: 650px) {
-            left: 50px;
+            left: 100px;
             top: 10px;
         }
 
-        @media (max-width: 550px) {
-            left: 65px;
-            top: 20px;
+        @media (max-width: 600px) {
+            top: 15px;
+            margin: 0;
+            left: 120px;
         }
 
-        @media (max-width: 400px) {
-            top: -15px;
-            margin: 0;
+        @media (max-width: 430px) {
+            top: -5px;
+            left: 110px;
+        }
+
+        @media (max-width: 390px) {
+            top: -20px;
+            left: 80px;
         }
 
         // @media (max-width: 1200px) {
@@ -332,14 +342,21 @@ header {
         width: 100%;
     }
 
-    @media (max-width: 400px) {
+    @media (max-width: 600px) {
         display: none;
 
         &__2 {
             display: block;
             object-fit: contain;
-            width: 320px;
-            bottom: 80px;
+            width: 90%;
+            bottom: -180px;
+            height: 150%;
+
+            @media (max-width: 430px) {
+                width: 360px;
+                bottom: 74px;
+                height: 83%;
+            }
 
             // @media (max-width: 530px) {
             //     right: 90px;
@@ -383,7 +400,7 @@ header {
         line-height: 130%;
         text-align: left;
 
-        @media (max-width: 550px) {
+        @media (max-width: 600px) {
             font-size: 32px;
         }
     }
@@ -396,7 +413,7 @@ header {
         text-align: left;
         white-space: wrap;
 
-        @media (max-width: 550px) {
+        @media (max-width: 600px) {
             font-size: 16px;
         }
 
@@ -449,7 +466,7 @@ header {
     background-repeat: no-repeat;
 
 
-    @media (max-width: 400px) {
+    @media (max-width: 430px) {
         height: 400px;
 
         // &_formImage {
