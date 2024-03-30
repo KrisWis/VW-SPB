@@ -240,17 +240,17 @@ header nav .navbar__info .navbar_offerCall {
   margin: 0 auto;
   padding-top: 70px;
 }
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
   .main_screen__form {
     width: 900px;
   }
 }
-@media (max-width: 950px) {
+@media (max-width: 1000px) {
   .main_screen__form {
     width: 700px;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 780px) {
   .main_screen__form {
     width: 100%;
     top: 40px;
@@ -299,7 +299,7 @@ header nav .navbar__info .navbar_offerCall {
 .main_screen_frame__2 {
   display: none;
 }
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
   .main_screen_frame {
     width: 900px;
     margin-left: auto;
@@ -309,12 +309,12 @@ header nav .navbar__info .navbar_offerCall {
     text-align: center;
   }
 }
-@media (max-width: 950px) {
+@media (max-width: 1000px) {
   .main_screen_frame {
     width: 700px;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 780px) {
   .main_screen_frame {
     width: 90%;
   }
@@ -322,6 +322,7 @@ header nav .navbar__info .navbar_offerCall {
 @media (max-width: 600px) {
   .main_screen_frame {
     display: none;
+    width: 95%;
   }
   .main_screen_frame__2 {
     display: block;
