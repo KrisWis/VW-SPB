@@ -1,11 +1,11 @@
 @charset "UTF-8";
 /* Sass Расширения */
-header nav .navbar__info .navbar_offerCall, header nav .navbar__adaptive_menu__info li, .services_types .service_type--more, .cars__model--more {
+.navbar__adaptive_menu__info li, header nav .navbar__info .navbar_offerCall, .services_types .service_type--more, .cars__model--more {
   position: relative;
   width: -moz-fit-content;
   width: fit-content;
 }
-header nav .navbar__info .navbar_offerCall::after, header nav .navbar__adaptive_menu__info li::after, .services_types .service_type--more::after, .cars__model--more::after {
+.navbar__adaptive_menu__info li::after, header nav .navbar__info .navbar_offerCall::after, .services_types .service_type--more::after, .cars__model--more::after {
   content: "";
   display: block;
   position: absolute;
@@ -16,7 +16,7 @@ header nav .navbar__info .navbar_offerCall::after, header nav .navbar__adaptive_
   bottom: -5px;
   border-radius: 10px;
 }
-header nav .navbar__info .navbar_offerCall:hover::after, header nav .navbar__adaptive_menu__info li:hover::after, .services_types .service_type--more:hover::after, .cars__model--more:hover::after {
+.navbar__adaptive_menu__info li:hover::after, header nav .navbar__info .navbar_offerCall:hover::after, .services_types .service_type--more:hover::after, .cars__model--more:hover::after {
   width: 100%;
 }
 
@@ -44,6 +44,14 @@ header {
   flex-direction: column;
   width: 100%;
   order: 0;
+  background-color: var(--white);
+  height: 93px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 3;
   /* Навигация */
 }
 header nav {
@@ -78,14 +86,6 @@ header nav .navbar {
   gap: 70px;
   max-width: 100%;
 }
-header nav .navbar .active {
-  transform: translateX(35%);
-}
-@media (max-width: 700px) {
-  header nav .navbar .active {
-    transform: translateX(5%);
-  }
-}
 header nav .navbar_phone {
   display: flex;
   gap: 10px;
@@ -108,100 +108,6 @@ header nav .navbar__menu {
 }
 header nav .navbar__menu li {
   cursor: pointer;
-}
-header nav .navbar__adaptive_menu {
-  width: 47vw;
-  height: 100vh;
-  display: none;
-  transform: translateX(200%);
-  transition: transform 0.5s ease-in-out;
-  position: fixed;
-  background-color: #111111;
-  z-index: 4;
-  bottom: 0;
-  color: var(--white);
-  align-items: flex-end;
-  gap: 150px;
-  flex-direction: column;
-  font-size: clamp(30px, 3rem, 40px);
-  padding: 0;
-  margin: 0;
-  top: 0;
-  padding: 30px;
-}
-@media (max-width: 700px) {
-  header nav .navbar__adaptive_menu {
-    gap: 60px;
-  }
-}
-@media (max-width: 500px) {
-  header nav .navbar__adaptive_menu {
-    font-size: 2rem;
-    gap: 130px;
-  }
-}
-@media (max-width: 300px) {
-  header nav .navbar__adaptive_menu {
-    font-size: 1.5rem;
-  }
-}
-header nav .navbar__adaptive_menu__info {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-self: center;
-}
-@media (max-width: 700px) {
-  header nav .navbar__adaptive_menu__info {
-    align-items: flex-end;
-    padding-right: 10px;
-    align-self: flex-end;
-  }
-}
-header nav .navbar__adaptive_menu__info li {
-  margin-top: 5px;
-}
-header nav .navbar__adaptive_menu__info li::after {
-  background-color: var(--white);
-  box-shadow: 5px 5px 15px var(--white);
-}
-header nav .navbar__adaptive_menu__header {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  width: 100%;
-  margin-top: 10px;
-}
-header nav .navbar__adaptive_menu__header .logo {
-  height: 100%;
-  align-items: flex-start;
-  justify-content: center;
-  margin-right: 0;
-}
-@media (max-width: 700px) {
-  header nav .navbar__adaptive_menu {
-    width: 70vw;
-  }
-}
-header nav .navbar__adaptive_menu_cross {
-  cursor: pointer;
-}
-header nav .navbar__adaptive_menu li {
-  cursor: pointer;
-}
-@media (max-width: 1200px) {
-  header nav .navbar__adaptive_menu {
-    display: flex;
-  }
-}
-header nav .navbar__adaptive_menuBurger {
-  cursor: pointer;
-  display: none;
-}
-@media (max-width: 1200px) {
-  header nav .navbar__adaptive_menuBurger {
-    display: block;
-  }
 }
 header nav .navbar__info {
   display: flex;
@@ -230,6 +136,110 @@ header nav .navbar__info .navbar_offerCall {
   font-size: 1.25rem;
   cursor: pointer;
   color: var(--black);
+}
+
+.navbar__adaptive_menu {
+  width: 47vw;
+  height: 100vh;
+  display: none;
+  transform: translateX(220%);
+  transition: transform 0.5s ease-in-out;
+  position: fixed;
+  background-color: #111111;
+  z-index: 4;
+  bottom: 0;
+  color: var(--white);
+  align-items: flex-end;
+  gap: 150px;
+  flex-direction: column;
+  font-size: clamp(30px, 3rem, 40px);
+  padding: 0;
+  margin: 0;
+  top: 0;
+  padding: 30px;
+}
+@media (max-width: 700px) {
+  .navbar__adaptive_menu {
+    gap: 60px;
+  }
+}
+@media (max-width: 500px) {
+  .navbar__adaptive_menu {
+    font-size: 2rem;
+    gap: 130px;
+  }
+}
+@media (max-width: 300px) {
+  .navbar__adaptive_menu {
+    font-size: 1.5rem;
+  }
+}
+.navbar__adaptive_menu__info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-self: center;
+}
+@media (max-width: 700px) {
+  .navbar__adaptive_menu__info {
+    align-items: flex-end;
+    padding-right: 10px;
+    align-self: flex-end;
+  }
+}
+.navbar__adaptive_menu__info li {
+  margin-top: 5px;
+}
+.navbar__adaptive_menu__info li::after {
+  background-color: var(--white);
+  box-shadow: 5px 5px 15px var(--white);
+}
+.navbar__adaptive_menu__header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+.navbar__adaptive_menu__header .logo {
+  height: 100%;
+  align-items: flex-start;
+  justify-content: center;
+  margin-right: 0;
+}
+@media (max-width: 700px) {
+  .navbar__adaptive_menu {
+    width: 70vw;
+  }
+}
+.navbar__adaptive_menu_cross {
+  cursor: pointer;
+}
+.navbar__adaptive_menu li {
+  cursor: pointer;
+}
+@media (max-width: 1200px) {
+  .navbar__adaptive_menu {
+    display: flex;
+  }
+}
+.navbar__adaptive_menuBurger {
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 1200px) {
+  .navbar__adaptive_menuBurger {
+    display: block;
+  }
+}
+
+.navbar__adaptive--active {
+  transform: translateX(110%);
+}
+@media (max-width: 700px) {
+  .navbar__adaptive--active {
+    transform: translateX(45%);
+  }
 }
 
 /* Main screen */
@@ -428,6 +438,7 @@ header nav .navbar__info .navbar_offerCall {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  margin-top: 90px;
 }
 @media (max-width: 440px) {
   .main_screen {

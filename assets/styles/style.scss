@@ -48,6 +48,14 @@ header {
     flex-direction: column;
     width: 100%;
     order: 0;
+    background-color: var(--white);
+    height: 93px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 3;
 
     /* Навигация */
 
@@ -84,14 +92,6 @@ header {
             gap: 70px;
             max-width: 100%;
 
-            .active {
-                transform: translateX(35%);
-
-                @media (max-width: 700px) {
-                    transform: translateX(5%);
-                }
-            }
-
             &_phone {
                 display: flex;
                 gap: 10px;
@@ -113,104 +113,6 @@ header {
 
                 li {
                     cursor: pointer;
-                }
-            }
-
-            &__adaptive_menu {
-
-                width: 47vw;
-                height: 100vh;
-                display: none;
-                transform: translateX(200%);
-                transition: transform .5s ease-in-out;
-                position: fixed;
-                background-color: #111111;
-                z-index: 4;
-                bottom: 0;
-                color: var(--white);
-                align-items: flex-end;
-                gap: 150px;
-                flex-direction: column;
-                font-size: clamp(30px, 3rem, 40px);
-                padding: 0;
-                margin: 0;
-                top: 0;
-                padding: 30px;
-
-                @media (max-width: 700px) {
-                    gap: 60px;
-                }
-
-                @media (max-width: 500px) {
-                    font-size: 2rem;
-                    gap: 130px;
-                }
-
-                @media (max-width: 300px) {
-                    font-size: 1.5rem;
-                }
-
-                &__info {
-                    display: flex;
-                    flex-direction: column;
-                    text-align: center;
-                    align-self: center;
-
-                    @media (max-width: 700px) {
-                        align-items: flex-end;
-                        padding-right: 10px;
-                        align-self: flex-end;
-                    }
-
-                    li {
-                        @extend %link_hover_effect;
-                        margin-top: 5px;
-
-                        &::after {
-                            background-color: var(--white);
-                            box-shadow: 5px 5px 15px var(--white);
-                        }
-                    }
-                }
-
-                &__header {
-                    display: flex;
-                    align-items: baseline;
-                    justify-content: space-between;
-                    width: 100%;
-                    margin-top: 10px;
-
-                    .logo {
-                        height: 100%;
-                        align-items: flex-start;
-                        justify-content: center;
-                        margin-right: 0;
-                    }
-                }
-
-                @media (max-width: 700px) {
-                    width: 70vw;
-                }
-
-                &_cross {
-                    cursor: pointer;
-                }
-
-                li {
-                    cursor: pointer;
-                }
-
-                @media (max-width: 1200px) {
-                    display: flex;
-                }
-
-                &Burger {
-                    cursor: pointer;
-                    display: none;
-
-                    @media (max-width: 1200px) {
-                        display: block;
-                    }
                 }
             }
 
@@ -249,6 +151,115 @@ header {
         }
     }
 }
+
+// Адаптивное меню
+
+.navbar__adaptive_menu {
+
+    width: 47vw;
+    height: 100vh;
+    display: none;
+    transform: translateX(220%);
+    transition: transform .5s ease-in-out;
+    position: fixed;
+    background-color: #111111;
+    z-index: 4;
+    bottom: 0;
+    color: var(--white);
+    align-items: flex-end;
+    gap: 150px;
+    flex-direction: column;
+    font-size: clamp(30px, 3rem, 40px);
+    padding: 0;
+    margin: 0;
+    top: 0;
+    padding: 30px;
+
+    @media (max-width: 700px) {
+        gap: 60px;
+    }
+
+    @media (max-width: 500px) {
+        font-size: 2rem;
+        gap: 130px;
+    }
+
+    @media (max-width: 300px) {
+        font-size: 1.5rem;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-self: center;
+
+        @media (max-width: 700px) {
+            align-items: flex-end;
+            padding-right: 10px;
+            align-self: flex-end;
+        }
+
+        li {
+            @extend %link_hover_effect;
+            margin-top: 5px;
+
+            &::after {
+                background-color: var(--white);
+                box-shadow: 5px 5px 15px var(--white);
+            }
+        }
+    }
+
+    &__header {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 10px;
+
+        .logo {
+            height: 100%;
+            align-items: flex-start;
+            justify-content: center;
+            margin-right: 0;
+        }
+    }
+
+    @media (max-width: 700px) {
+        width: 70vw;
+    }
+
+    &_cross {
+        cursor: pointer;
+    }
+
+    li {
+        cursor: pointer;
+    }
+
+    @media (max-width: 1200px) {
+        display: flex;
+    }
+
+    &Burger {
+        cursor: pointer;
+        display: none;
+
+        @media (max-width: 1200px) {
+            display: block;
+        }
+    }
+}
+
+.navbar__adaptive--active {
+    transform: translateX(110%);
+
+    @media (max-width: 700px) {
+        transform: translateX(45%);
+    }
+}
+
 
 /* Main screen */
 .main_screen__form {
@@ -474,6 +485,7 @@ header {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    margin-top: 90px;
 
 
     @media (max-width: 440px) {

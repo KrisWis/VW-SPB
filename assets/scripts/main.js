@@ -20,12 +20,12 @@ const cars__popup__characteristics = document.getElementById("cars__popup__chara
 
 /* Открытие и закрытие бургер меню */
 navbar__adaptive_menuBurger.addEventListener("click", () => {
-    navbar__adaptive_menu.classList.toggle("active");
+    navbar__adaptive_menu.classList.toggle("navbar__adaptive--active");
     popup__background.classList.add("popup__background__active");
 })
 
 navbar__adaptive_menu_cross.addEventListener("click", () => {
-    navbar__adaptive_menu.classList.remove("active");
+    navbar__adaptive_menu.classList.remove("navbar__adaptive--active");
     popup__background.classList.remove("popup__background__active");
 })
 
