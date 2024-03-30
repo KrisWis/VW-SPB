@@ -257,6 +257,11 @@ header nav .navbar__info .navbar_offerCall {
     right: 15px;
   }
 }
+@media (max-width: 440px) {
+  .main_screen__form {
+    min-width: 440px;
+  }
+}
 .main_screen__form_block {
   display: flex;
   gap: 20px;
@@ -277,9 +282,9 @@ header nav .navbar__info .navbar_offerCall {
     left: 120px;
   }
 }
-@media (max-width: 430px) {
+@media (max-width: 440px) {
   .main_screen__form_block {
-    left: 110px;
+    left: 120px;
     top: -65px;
   }
 }
@@ -333,11 +338,16 @@ header nav .navbar__info .navbar_offerCall {
     height: 150%;
   }
 }
-@media (max-width: 600px) and (max-width: 430px) {
+@media (max-width: 600px) and (max-width: 440px) {
   .main_screen_frame__2 {
     width: 360px;
     bottom: 120px;
     height: 80%;
+  }
+}
+@media (max-width: 600px) and (max-width: 390px) {
+  .main_screen_frame__2 {
+    right: auto;
   }
 }
 
@@ -419,7 +429,7 @@ header nav .navbar__info .navbar_offerCall {
   background-position: center center;
   background-repeat: no-repeat;
 }
-@media (max-width: 430px) {
+@media (max-width: 440px) {
   .main_screen {
     height: 400px;
   }
@@ -427,12 +437,12 @@ header nav .navbar__info .navbar_offerCall {
     font-size: 32px;
   }
 }
-@media (max-width: 430px) and (max-width: 330px) {
+@media (max-width: 440px) and (max-width: 330px) {
   .main_screen_inputForm_caption {
     font-size: 24px;
   }
 }
-@media (max-width: 430px) {
+@media (max-width: 440px) {
   .main_screen_inputForm_desc {
     line-height: 130%;
     font-weight: normal;
@@ -447,7 +457,7 @@ header nav .navbar__info .navbar_offerCall {
     flex-direction: column;
   }
 }
-@media (max-width: 430px) and (max-width: 330px) {
+@media (max-width: 440px) and (max-width: 330px) {
   .main_screen_inputForm_desc--adaptive {
     font-size: 14px;
   }
