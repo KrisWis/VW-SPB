@@ -20,7 +20,7 @@
   width: 100%;
 }
 
-.services_form--button, .details_catalog_button, .cars__to_catalog, .main_screen_inputForm_button {
+.leave_request_form--popup--button, .services_form--button, .details_catalog_button, .cars__to_catalog, .main_screen_inputForm_button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,7 +51,7 @@ header {
   bottom: 0;
   right: 0;
   left: 0;
-  z-index: 3;
+  z-index: 4;
   /* Навигация */
 }
 header nav {
@@ -1879,6 +1879,87 @@ header nav .navbar__info .navbar_offerCall {
   .services_form--button {
     width: 100%;
   }
+}
+
+/* Попап "Заказать звонок" */
+.leave_request_form--popup {
+  display: none;
+  flex-direction: column;
+  padding: 30px;
+  background: var(--white);
+  width: 560px;
+  gap: 10px;
+  border-radius: 10px;
+  color: var(--black);
+  align-self: center;
+  position: fixed;
+  top: 250px;
+  z-index: 4;
+}
+.leave_request_form--popup--close {
+  cursor: pointer;
+  align-self: flex-end;
+}
+.leave_request_form--popup--active {
+  display: flex;
+}
+@media (max-width: 600px) {
+  .leave_request_form--popup {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .leave_request_form--popup {
+    padding: 10px;
+  }
+}
+.leave_request_form--popup--caption {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+}
+.leave_request_form--popup--desc {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  align-self: center;
+  width: 70%;
+  white-space: wrap;
+  margin-bottom: 30px;
+}
+@media (max-width: 400px) {
+  .leave_request_form--popup--desc {
+    width: 90%;
+  }
+}
+.leave_request_form--popup--input {
+  border-bottom: 1px solid var(--light-grey);
+  height: 40px;
+  width: 100%;
+  background: var(--white);
+}
+.leave_request_form--popup--input::-moz-placeholder {
+  color: var(--dark-grey);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  font-family: var(--font-family);
+}
+.leave_request_form--popup--input::placeholder {
+  color: var(--dark-grey);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  font-family: var(--font-family);
+}
+.leave_request_form--popup--button {
+  border-radius: 10px;
+  height: 50px;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 24px;
+  height: 50px;
 }
 
 /*Osago*/

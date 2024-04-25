@@ -55,7 +55,7 @@ header {
     bottom: 0;
     right: 0;
     left: 0;
-    z-index: 3;
+    z-index: 4;
 
     /* Навигация */
 
@@ -2061,6 +2061,85 @@ header {
     }
 }
 
+
+/* Попап "Заказать звонок" */
+.leave_request_form--popup {
+    display: none;
+    flex-direction: column;
+    padding: 30px;
+    background: var(--white);
+    width: 560px;
+    gap: 10px;
+    border-radius: 10px;
+    color: var(--black);
+    align-self: center;
+    position: fixed;
+    top: 250px;
+    z-index: 4;
+
+    &--close {
+        cursor: pointer;
+        align-self: flex-end;
+    }
+
+    &--active {
+        display: flex;
+    }
+
+    @media (max-width: 600px) {
+        width: 100%;
+    }
+
+    @media (max-width: 500px) {
+        padding: 10px;
+    }
+
+    &--caption {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 130%;
+    }
+
+    &--desc {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        align-self: center;
+        width: 70%;
+        white-space: wrap;
+        margin-bottom: 30px;
+
+        @media (max-width: 400px) {
+            width: 90%;
+        }
+    }
+
+    &--input {
+        border-bottom: 1px solid var(--light-grey);
+        height: 40px;
+        width: 100%;
+        background: var(--white);
+
+        &::placeholder {
+            color: var(--dark-grey);
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 130%;
+            font-family: var(--font-family);
+        }
+    }
+
+    &--button {
+        @extend %blue_button;
+        border-radius: 10px;
+        height: 50px;
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 24px;
+        height: 50px;
+    }
+}
 
 /*Osago*/
 section.osago {
