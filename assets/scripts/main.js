@@ -16,7 +16,7 @@ const cars__popup__model_image = document.getElementById("cars__popup--model_ima
 const cars__popup__model_logo_image = document.getElementById("cars__popup--model_logo_image");
 const cars__popup__close = document.getElementById("cars__popup__close");
 const cars__popup__characteristics = document.getElementById("cars__popup__characteristics");
-const Leave_request_popups = document.querySelectorAll(".Leave_request_popup");
+const Leave_request_popups = document.querySelectorAll(".leave_request_popup");
 const leave_request_form__popup = document.getElementById("leave_request_form--popup");
 const leave_request_form__close = document.getElementById("leave_request_form__close");
 
