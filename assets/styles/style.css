@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+body {
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
 /* Sass Расширения */
 .navbar__adaptive_menu__info li,
 header nav .navbar__info .navbar_offerCall,
