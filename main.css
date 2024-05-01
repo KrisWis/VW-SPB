@@ -1,7 +1,7 @@
 @font-face {
     font-family: "VW Head";
     src: url('./assets/fonts/VWHead.ttf');
-    src: url('./assets/fonts/VWHead.ttf') format('ttf'), url('./assets/fonts/VWHead.woff2') format('woff2'), url('./assets/fonts/VWHead.woff') format('woff');
+    src: url('./assets/fonts/VWHead.ttf') format('truetype'), url('./assets/fonts/VWHead.woff2') format('woff2'), url('./assets/fonts/VWHead.woff') format('woff'), url('./assets/fonts/VWHead.eot') format('embedded-opentype');
 }
 
 :root {
@@ -43,6 +43,7 @@ body {
 
 * {
     font-family: var(--font-family);
+    -webkit-font-smoothing: subpixel-antialiased;
 }
 
 .blur {
